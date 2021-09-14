@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@font-face {
+  font-family: eca-fonts;
+  src: url(../../global/eca-fonts.ttf);
+}
+html {
+  --top-spacing: 100px;
+
+  --left-sec-bg-color:#f9f9f9;
+  --left-sec-fg-color:#524141;
+  
+  --right-sec-bg-color:#fafafa;
+  --right-sec-fg-color:rgba(37,38,94,.7);
+}
+
+body {
+  scroll-padding-top: var(--top-spacing);
+  box-sizing: border-box;
+  margin: var(--top-spacing) auto;
+  width: 100%;
+  height: 100%;
+  background-color: #F9FAFC;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: var( --right-sec-fg-color);
+  font-family: "eca-fonts", "Source Sans Pro", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p,h1,h2,h3,h4,h5,h6,a{
+  line-height: 1.7;
+  word-spacing: 5px;
+  font-variant: normal;
+  letter-spacing: 0px;
+  font-kerning: auto;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+
+.main-section{
+  display:flex;
+  flex-flow: row nowrap;
+  width:70%;
+  margin:0px auto;
+}
+
+.left-section {
+  background-color:var(--left-sec-bg-color);
+  color:var(--left-sec-fg-color);
+   flex-grow: 1;
+   padding: 50px 24px;
+}
+.topic-list {
+  list-style: none;
+}
+.topic-list li{
+  cursor: pointer;
+  font-size:18px;
+  font-weight: bold;
+  font-stretch: semi-condensed;
+}
+.topic-list .topic-name{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.sub-topic-list {
+  list-style: none;
+  font-size: 12px;
+  padding: 24px 16px;
+}
+.sub-topic-list li a:hover .listname{
+  color:#2980b9;
+}
+
+.sub-topic-list li a:visited .listname{
+  color:#8cc5ec;
+}
+
+.show-list {
+  display:block;
+  transition: all 0.3s ease-in;
+  color: gray;
+}
+.right-section {
+  background-color:var(--right-sec-bg-color);
+  color:var(--right-sec-fg-color);
+  text-rendering: optimizeLegibility;
+  padding:50px 30px;
+  width: 70%;
+}
+
+.checklist-link-container{
+  display: flex;
+  justify-content: center;
+  color:#525d5f;
+}
+.checklist-link-container .checklist{
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: .1;
+  justify-self: center;
+}
+
+.checklist-link-container .listname{
+   justify-content: flex-end;
+   width: 70%;
+   font-size: 15px;
+   
+  color:#525d5f;
+}
+.checklist-link-container .checklist .list{
+  width: 2px;
+  background-color:#525d5f;
+  height: 20px;
+  margin: -3px 7px;
+}
+.checklist-link-container .checklist .eoflist{
+  width: 0;
+  height: 0;
+}
+.right-section .h720{
+  width: 50%;
+  height: 720px;
+}
+
+.top-section-subsec {
+  width: 70%;
+  margin:50px auto;
+  
+}
+.top-section-subsec .card-sec {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center; 
+  font-size: 20px;
+}
+.top-section-subsec .card-sec a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+.atmellogo,.mchiplogo,.armlogo {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 150px;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  display:flex;
+  flex-flow: column nowrap;
+  
+  margin:10px;
+}
+/* add class="jumptarget" to all targets. */
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:100px; /* fixed header height*/
+  margin:-100px 0 0; /* negative fixed header height */
+}
+.imgP{
+  text-align: center;
+  width: 70%;
+  margin: 0px auto;
+}
+.gototop a{
+  box-shadow:3px 2px 5px black;
+  background-color: rgb(52, 137, 206);
+  border-radius: 50%;
+  position: fixed;
+  width: 20px;
+  text-align: center;
+  top:720px;
+  right:20px;
+  color: white;
+}
+@media only screen and (max-width: 1368px) {
+  .main-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+  .main-section {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+  }
+  .left-section{
+    width: 30%;
+  }
+  .right-section {
+    width: 60%;
+  }
+}
+.gist-meta{
+  display:none;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .main-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    flex-flow: column nowrap;
+  }
+
+  .left-section,.right-section {
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .left-section .topic-name {
+    width: 90%;
+
+  }  
+  .right-section-content{
+    padding: 10px;
+  }
+    .imgP{
+      width: 100%;
+    }
+    section.top-section-subsec {
+      width: 100%;
+      margin:10px auto;
+      
+    }
+    .codeWindow {
+      width: 100%;
+      margin: 0;
+    }
+}

@@ -1,0 +1,267 @@
+
+html {
+  --top-spacing: 100px;
+}
+
+body {
+  scroll-padding-top: var(--top-spacing);
+  font-family: 'eca-fonts',"Lato", sans-serif;
+  
+  margin: var(--top-spacing) 0;
+  -webkit-font-smoothing: antialiased;
+}
+input{
+  font-family: 'eca-fonts',"Lato", sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-content {
+  width: 90%;
+  margin: 150px 50px auto;
+  color:rgba(31, 29, 29, 0.753);
+}
+.subscription-page {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 70%;
+  min-width: 330px;
+  margin: 0px auto;
+  background-color: #F0F1F5;
+}
+.row-0-col-1{
+  flex: 1 1 0;
+  margin:0px auto;
+  padding: 50px 100px;
+}
+.row-0-col-1 form {
+  width: 100%;
+  padding-top: 20px;
+}
+.row-0-col-1 input.input-email{
+  border:0;
+  min-width: 100px;
+  max-width: 100%;
+  height: 30px;
+  
+  border:2px solid #2980b9;
+ outline: none;
+}
+
+.row-0-col-1 input.input-submit{
+  border:0;
+  
+  min-width: 70px;
+  max-width: 100%;
+  height: 36px;
+  border:2px solid #2980b9;
+  color:#FFF;
+  background-color: #2980b9;
+  outline: none;
+  margin-left: -5px;
+}
+.row-0-col-2{
+  flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.row-0-col-2 p img {
+  width: 80%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.card-section {
+  text-align: center;
+  min-width: 330px;
+}
+.card-section h2{
+  text-align: center;
+  align-self: center;
+  padding:10px;
+}
+.card-section-page {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.embedded-card,.rtos-card,.linux-card,.qt-card {
+  padding: 3rem;
+}
+.flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  
+  box-shadow:10px 10px 10px gray;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:flex-end;
+  align-items: center;
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back a{
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  width: 100%;
+  max-height: 40%;
+  background-color: #bbb;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card-back p{
+ font-size: 10px;
+ line-height: 0;
+}
+
+.flip-card-back a i{ 
+  font-size: 10px;
+  line-height: 0;
+}
+.flip-card-back a:hover{
+  background-color: azure;
+}
+
+main{
+  width: 70%;
+  margin: 0px auto;
+}
+main section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 20px;
+}
+main section div.left{
+    flex:1 1 0;
+    padding: 30px 40px;
+}
+main section div.left h4 a{
+  color: rgb(189, 137, 118);
+}
+main section div.right{
+    flex:1 1 0;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+main section .right picture img{
+  width: 40%;
+  object-fit: cover;
+  object-position: bottom;
+}
+main section h3{
+  
+  color: #297fb9ca;
+}
+main section h4,p{
+  color:#306a7cd3;
+  line-height: 28px;
+}
+@media only screen and (max-width: 1080px) {
+  main{
+    width: 90%;
+  }
+  .subscription-page {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main{
+    width: 100%;
+  }
+  .page-content {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .subscription-page {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .row-0-col-1 {
+    padding: 10px 10px;
+  }
+  .embedded-card,.rtos-card,.linux-card,.qt-card {
+    padding: 1rem;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+  }
+  .flip-card-front img{
+    width: 100px;
+  }
+  .flip-card-back h1{
+    font-size: 18px;
+  }
+  .flip-card-back p{
+    font-size: 10px;
+  }
+  .flip-card-back a h2{
+    font-size: 15px;
+  }
+  
+  .flip-card-back a i{ 
+    font-size: 15px;
+    padding:20px 5px;
+  }
+
+  main section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

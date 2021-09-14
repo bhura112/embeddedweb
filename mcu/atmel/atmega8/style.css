@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@font-face {
+  font-family: eca-fonts;
+  src: url(../global/eca-fonts.ttf);
+}
+html {
+  --top-spacing: 10px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "eca-fonts", "Source Sans Pro", "Helvetica Neue", "Helvetica",
+  "Arial", sans-serif;
+}
+
+body {
+  scroll-padding-top: var(--top-spacing);
+  box-sizing: border-box;
+  margin: var(--top-spacing) auto;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .top-section{
+  width: 100%;
+  padding-top: 100px;
+  
+  background-color: #f9fafc;
+}
+.top-section .content{
+  width:80%;
+  margin:0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-section .content picture{
+  flex:1 1 0;
+  width: 100%;
+}
+.top-section .content picture img{
+  width: 100%;
+}
+.top-section .content .content-col{
+  flex:1 1 60%;
+  padding: 50px 60px;
+  color: rgba(37,38,94,.7);
+  word-spacing: 5px;
+  line-height: 28px;
+}
+.top-section .content .content-col h2{
+  color:#25265e;
+  padding: 10px 20px;
+  
+}
+.top-section .content .content-col h4{
+  padding: 0px 20px;
+}
+section.top-section-subsec {
+  width: 70%;
+  margin:50px auto;
+  
+}
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:100px; /* fixed header height*/
+  margin:-100px 0 0; /* negative fixed header height */
+}
+.clearafter::after{
+  content: "";
+  clear: both;
+}
+@media only screen and (max-width: 767px) {
+  .top-section .content{
+   flex-direction: column;
+   width: 100%;
+  }
+  .top-section .content picture{
+    flex:1 1 100%;
+    
+  }
+  .top-section .content .content-col{
+    flex:1 1 100%;
+    padding: 30px 20px;
+  }
+  section.top-section-subsec {
+    width:100%;
+  }
+  .top-section .content .content-col .center-me{
+    text-align: center;
+  }
+  .left-page-index {
+   display: none;
+  }
+  .right-topic-index .topicindex .container {
+  width: 100%;
+  }
+  .top-section .content picture{
+    flex:1 1 0;
+    width: 50%;
+    margin: 0px auto;
+  }
+  .top-section .content picture img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
