@@ -245,3 +245,14 @@ section.top-section-subsec .card-sec a:hover {
     margin-right: auto;
   }
 }
+.page-container{
+  background-color: #f9fafc;
+  color: #65668D;
+}
+.page-container .conatiner{
+  width: 70%;
+  margin: 0px auto;
+  
+  line-height: 28px;
+  font-weight: 400;
+}

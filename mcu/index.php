@@ -117,8 +117,36 @@
           
                 </div>
         </section>
+         <section class="page-container">
+          <div class="conatiner introduction">
+            
+            <p>Welcome to the World of Microcontrollers, a tiny (yet very powerful) device that changed the face of Embedded Systems. 
+               In this tutorial / article, you will learn about the Rise of Microcontrollers, few Basics of Microcontrollers, Microcontroller’s Structure and also few differences between Microprocessor and Microcontroller.
+               Before going in to the details of Basics of Microcontrollers, you need to know what a Microcontroller</p>
+               <p> Microcontrollers are similar to Microprocessors, but they have few additional components on the same chip.</p>
+          </div>
 
-        <section class="page-section">
+          <div class="conatiner whatis">
+
+          <h2>What is a Microcontroller?</h2>
+<p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.
+</p>
+
+<p>Sometimes, a Microcontroller is also called as a Computer-on-a-Chip or a Single-Chip-Computer. Since the Microcontroller and its supporting circuitry are often embedded in the device it controls, a Microcontroller is also called as an Embedded Controller.
+</p>
+<p>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.
+</p>
+
+<p>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.
+</p>
+<p>Consumer Electronics is another area which is loaded with Microcontrollers. Microcontrollers are a part of Digital Cameras, Video Camcorders, CD and DVD Players, Washing Machines, Ovens, etc.
+</p>
+<p>Microcontrollers are also used in test and measurement equipment like Multimeters, Oscilloscopes, Function Generators, etc. You can also find microcontrollers near your desktop computer like Printers, Routers, Modems, Keyboards, etc.
+</p>
+<p>The above definitions of the Microcontroller might seem complicated or confusing to newbies in Electronics or Embedded Systems but the concept will become clear as we move forward.
+</p>   </div>
+         </section>
+       <!-- <section class="page-section">
 
           <div class= "page-content"> 
             <div class="left-page-index">
@@ -376,7 +404,7 @@
                 
              
           </div>
-        </section>
+        </section>-->
       </main>
     </div>
 

@@ -53,7 +53,6 @@
             <li><a href="qt/">Qt</a></li>
         </ul>
     </div>
-
     <div onclick="burgerClicked()" class="burger-menu">
     <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </div>
