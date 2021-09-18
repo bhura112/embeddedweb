@@ -32,7 +32,18 @@
     <link rel="stylesheet" href="../global/header.css" />
     <link rel="stylesheet" href="../global/foot.css" />
     <link rel="stylesheet" href="style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
+     crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFF1PLC6Q9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TFF1PLC6Q9');
+    </script>
     <title><?php  echo $rowobj->page_title; ?></title>
   </head>
 
@@ -129,22 +140,22 @@
           <div class="conatiner whatis">
 
           <h2>What is a Microcontroller?</h2>
-<p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.
-</p>
+          <p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.
+          </p>
 
-<p>Sometimes, a Microcontroller is also called as a Computer-on-a-Chip or a Single-Chip-Computer. Since the Microcontroller and its supporting circuitry are often embedded in the device it controls, a Microcontroller is also called as an Embedded Controller.
-</p>
-<p>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.
-</p>
+          <p>Sometimes, a Microcontroller is also called as a Computer-on-a-Chip or a Single-Chip-Computer. Since the Microcontroller and its supporting circuitry are often embedded in the device it controls, a Microcontroller is also called as an Embedded Controller.
+          </p>
+          <p>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.
+          </p>
 
-<p>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.
-</p>
-<p>Consumer Electronics is another area which is loaded with Microcontrollers. Microcontrollers are a part of Digital Cameras, Video Camcorders, CD and DVD Players, Washing Machines, Ovens, etc.
-</p>
-<p>Microcontrollers are also used in test and measurement equipment like Multimeters, Oscilloscopes, Function Generators, etc. You can also find microcontrollers near your desktop computer like Printers, Routers, Modems, Keyboards, etc.
-</p>
-<p>The above definitions of the Microcontroller might seem complicated or confusing to newbies in Electronics or Embedded Systems but the concept will become clear as we move forward.
-</p>   </div>
+          <p>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.
+          </p>
+          <p>Consumer Electronics is another area which is loaded with Microcontrollers. Microcontrollers are a part of Digital Cameras, Video Camcorders, CD and DVD Players, Washing Machines, Ovens, etc.
+          </p>
+          <p>Microcontrollers are also used in test and measurement equipment like Multimeters, Oscilloscopes, Function Generators, etc. You can also find microcontrollers near your desktop computer like Printers, Routers, Modems, Keyboards, etc.
+          </p>
+          <p>The above definitions of the Microcontroller might seem complicated or confusing to newbies in Electronics or Embedded Systems but the concept will become clear as we move forward.
+          </p>   </div>
          </section>
        <!-- <section class="page-section">
 
@@ -409,212 +420,8 @@
     </div>
 
     
-
-    <!-- Main Content ver 1.01 
-    <div class="main-section">
-      <div class="page">
-        <div class="page-head">
-          <p>
-            <img
-              id="page-topic-icon"
-              src="../img/flip-card-front.svg"
-              width="130"
-              height="150"
-            />
-          </p>
-          <div class="page-top-content">
-            <h1 id="page-topic-name">Learn Microcontrollers</h1>
-            <nav class="page-topics">
-              <ul>
-                <li><a class="topic-active" href="#"> Controllers</a></li>
-                <li><a href="/Referances/"> Referances</a></li>
-                <li><a href="/Documents/"> Documents</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="card-section">
-        <h3>Learn Different Controllers</h3>
-        <div class="cc-cards"> 
-
-          
-        
-          <a href="." class="card 8051-card">
-              <h4>8051</h4>
-          </a>
-
-          <a href="." class="card avr-card">
-              <h4>AVR</h4>
-          </a>
-
-          <a href="." class="card pic-card">
-            <h4>PIC</h4>
-          </a>
-
-          <a href="." class="card arm-card">
-          <h4>ARM</h4>
-          </a>
-        </div>
-         
-        </div>
-        <div class="content">
-          <div class="content-section">
-            <ul class="content-tab">
-              <li>
-                <a href=".">
-                  <h3>Micro Controller</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>RISC</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>CISC</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>MEMORY</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>BOOT LOADER</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>GPIO</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>TIMER</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>UART</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>SPI</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>I2C</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>WATCH DOG</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="content-data">
-              <div class="whatIs">
-                <h2>Micro Controllers</h2>
-                <br><br>
-                <p><i class="fa fa-info-circle" aria-hidden="true"></i> Microcontroller is a small computer on a single meta-oxide-semiconductor <i>ic (integrated circuit)</i> <br>or chip. It's also called <i>SOC (small of computer)</i>.</p>
-
-                <p>These micro computers are used for a specific task. A Microcontroller cantains cpu <i>single core or multi-core </i>, <br>memory unit, bootloader, gpio ,Timer, communication interface like : <i> UART, USART, SPI, I2C, Ethernet </i> <br>and many other features.</p>
-              </div>
-              <div class="microcontroller-img">
-               <img src="../img/mircocontroller.svg">
-             </div>
-
-
-             <div class="topic-progress">
-              <div class="topic-area">
-                <div class="topic-details">
-                  <h5> Learn Micro Contollers</h5>
-                  <p> Micro Controllers</p>
-               </div>
-               <div class="topic-bar">
-                   <p>bar</p> 
-               </div>
-              </div>
-              <div class="topic-buttons">
-                <div class="prev"> <a href="."><i class="fas fa-angle-left"></i> Prev </a></div>
-                <div class="next"> <a href=".">Next <i class="fas fa-angle-right"></i></a></div>
-              </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
--->
-    
     <div class="page-space"></div>
-    <footer class="footer">
-      <div class="foot-content">
-              <div class="mcu"> 
-                  <a href="javascript:void(0)"><h4>MICRO CONTROLLERS</h4></a>
-                  <a href="javascript:void(0)">8051</a>
-                  <a href="javascript:void(0)">ATMEL</a>
-                  <a href="javascript:void(0)">PIC</a>
-                  <a href="javascript:void(0)">ARM</a>
-                  <a href="javascript:void(0)">MCP</a>
-              </div>
-
-              <div class="rtos"> 
-                  <a href="javascript:void(0)"><h4>FREE RTOS</h4></a>
-                  <a href="javascript:void(0)">Porject Managment</a>
-                  <a href="javascript:void(0)">Heap Managment</a>
-                  <a href="javascript:void(0)">Task Managment</a>
-                  <a href="javascript:void(0)">Queue Managment</a>
-                  <a href="javascript:void(0)">Timer Management</a>
-                  <a href="javascript:void(0)">Interrupt Managment</a>
-                  <a href="javascript:void(0)">Resource management</a>
-                  <a href="javascript:void(0)">Event Group</a>
-                  <a href="javascript:void(0)">Porting</a>
-              </div>
-
-              <div class="linux"> 
-                  <a href="javascript:void(0)"><h4>LINUX</h4></a>
-                  <a href="javascript:void(0)">Shell Scripting</a>
-                  <a href="javascript:void(0)">IPC</a>
-                  <a href="javascript:void(0)">Socket</a>
-                  <a href="javascript:void(0)">Memory</a>
-                  <a href="javascript:void(0)">Process</a>
-                  <a href="javascript:void(0)">Device Drivers</a>
-              </div>
-
-              <div class="qt"> 
-                  <a href="javascript:void(0)"><h4>QT Framework</h4></a>
-                  <a href="javascript:void(0)">Basics</a>
-                  <a href="javascript:void(0)">App Development</a>
-                 </div>
-      </div>
-     
-
-     <div class="contacts"> 
-      <h4>contact@embeddedweb.in</h4>
-      <h4>All Rights@ Reserved </h4>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-youtube"></i></a>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-twitter"></i></a>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-linkedin"></i></a>
-     </div>
-    
-  </footer> 
+    <?php include_once '../global/foot.php'; ?>
   </body>
   <script src="script.js"></script>
   <script src="../global/headerScript.js"></script>

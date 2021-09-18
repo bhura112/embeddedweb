@@ -88,57 +88,7 @@
     </div>
     
     <div class="page-space"></div>
-    <footer class="footer">
-      <div class="foot-content">
-              <div class="mcu"> 
-                  <a href="javascript:void(0)"><h4>MICRO CONTROLLERS</h4></a>
-                  <a href="javascript:void(0)">8051</a>
-                  <a href="javascript:void(0)">ATMEL</a>
-                  <a href="javascript:void(0)">PIC</a>
-                  <a href="javascript:void(0)">ARM</a>
-                  <a href="javascript:void(0)">MCP</a>
-              </div>
-
-              <div class="rtos"> 
-                  <a href="javascript:void(0)"><h4>FREE RTOS</h4></a>
-                  <a href="javascript:void(0)">Porject Managment</a>
-                  <a href="javascript:void(0)">Heap Managment</a>
-                  <a href="javascript:void(0)">Task Managment</a>
-                  <a href="javascript:void(0)">Queue Managment</a>
-                  <a href="javascript:void(0)">Timer Management</a>
-                  <a href="javascript:void(0)">Interrupt Managment</a>
-                  <a href="javascript:void(0)">Resource management</a>
-                  <a href="javascript:void(0)">Event Group</a>
-                  <a href="javascript:void(0)">Porting</a>
-              </div>
-
-              <div class="linux"> 
-                  <a href="javascript:void(0)"><h4>LINUX</h4></a>
-                  <a href="javascript:void(0)">Shell Scripting</a>
-                  <a href="javascript:void(0)">IPC</a>
-                  <a href="javascript:void(0)">Socket</a>
-                  <a href="javascript:void(0)">Memory</a>
-                  <a href="javascript:void(0)">Process</a>
-                  <a href="javascript:void(0)">Device Drivers</a>
-              </div>
-
-              <div class="qt"> 
-                  <a href="javascript:void(0)"><h4>QT Framework</h4></a>
-                  <a href="javascript:void(0)">Basics</a>
-                  <a href="javascript:void(0)">App Development</a>
-                 </div>
-      </div>
-     
-
-     <div class="contacts"> 
-      <h4>contact@embeddedweb.in</h4>
-      <h4>All Rights@ Reserved </h4>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-youtube"></i></a>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-twitter"></i></a>
-      <a href="javascript:void(0)"><a href="#"> <i class="fa fa-linkedin"></i></a>
-     </div>
-    
-  </footer> 
+    <?php include_once '../../../../global/foot.php'; ?>
   </body>
   <script src="script.js"></script>
   <script src="../global/headerScript.js"></script>
