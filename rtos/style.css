@@ -115,17 +115,18 @@ section.top-section-subsec .card-sec a:hover {
   padding: 0px 20px;
 }
 .page-container .topics{
-  background-color: aliceblue;
   display: flex;
-  margin: 5px auto;
+  margin: 75px auto;
   width: 70%;
   gap: 20px;
-  padding: 30px;
+  background-color: #faf9fc;
 }
 .page-container .topics .table-of-content{
    background-color: #ecebdc;
    flex:1 1 0;
-   max-width: 450px;
+   margin: -5px 0px;
+   min-width: 350px;
+   max-width: 350px;
    align-self:flex-start;
 }
 .page-container .topics .table-of-content h3{
@@ -149,8 +150,39 @@ section.top-section-subsec .card-sec a:hover {
   flex:1 1 0;
 }
 .table-topic-container{
-  background-color: antiquewhite;
   min-height:700px ;
+}
+.container-body {
+ padding: 25px 0px;
+}
+.container-body h2{
+   text-align: center;
+   background-color: #2f91ca9d;
+   color: white;
+   padding: 12px 0px 12px 0px;
+   margin: -9px 0px;
+}
+.container-body h4,h5,p{
+  margin: 25px;
+}
+.container-body img{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.container-body pre{
+ width: 90%;
+ margin:25px;
+}
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:70px; /* fixed header height*/
+  margin:-90px 0 0; /* negative fixed header height */
+}
+.clearafter::after{
+  content: "";
+  clear: both;
 }
 @media only screen and (max-width: 767px) {
   .top-section .content{
@@ -161,14 +193,25 @@ section.top-section-subsec .card-sec a:hover {
     flex:1 1 100%;
     
   }
-
+  .top-section .content picture img{
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
   .top-section .content .content-col{
     flex:1 1 100%;
     padding: 30px 20px;
   }
   .page-container .topics{
-   width: 90%;
+   width: 100%;
    flex-direction: column;
+  }
+  .page-container .article{
+    width: 100%;
+  }
+  .page-container .topics .table-of-content{
+    min-width: 99%;
+    margin: auto;
   }
 }
 
