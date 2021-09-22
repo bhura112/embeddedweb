@@ -128,20 +128,68 @@
           
                 </div>
         </section>
+
+        <section class="page-container">
+         <div class="article">
+           <h4>Welcome to the World of Microcontrollers, a tiny (yet very powerful) device that changed the face of Embedded Systems. 
+               In this tutorial / article, you will learn about the Rise of Microcontrollers, few Basics of Microcontrollers, Microcontroller’s Structure and also few differences between Microprocessor and Microcontroller.
+               Before going in to the details of Basics of Microcontrollers, you need to know what a Microcontroller</h4>
+           <h2>What is Microcontroller?</h2>
+           <h4>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.
+           <h4>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.
+           <h4>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.
+          </h4> 
+          </div>
+
+          <div class="topics">
+            <div class="table-of-content">
+              <h3>Table Index</h3>
+              <a href="#architecture">Architectures</a>
+              <a href="#mem">Memory </a>
+              <a href="#io">Input/Output </a>
+              <a href="#timer">Timer</a>
+              <a href="#uart" >Uart</a>
+              <a href="#i2c">I2C</a>
+              <a href="#spi">SPI </a>
+            </div>
+            <div class="table-topic">
+              <div id="architecture" class="table-topic-container jumptarget">
+                     <div class="container-body">
+                       <h2>Architectures</h2>
+                       <h5 class="fa fa-2x">Von Neumann Architecture</h5>
+                       <h4>This type of architecture has common Memory for storage of data and programs.</h4>
+                       <img src="img/von.png" alt="">
+                        <h4>The heart of the von Neumann computer architecture is the Central Processing Unit (CPU), consisting of the control unit and the ALU (Arithmetic and Logic Unit). The CPU interacts with a
+                            memory and an input/output (I/O) subsystem and executes a stream of instructions (the computer
+                            program) that process the data stored in memory and perform I/O operations. The key concept
+                            of the von Neumann architecture is that data and instructions are stored in the memory system in exactly the same way.</h4>
+                       <h5 class="fa fa-2x">Harvard Architecture</h5>
+                       <h4>This architecture has separate Memory units for Program and Data Storage and separate Busses for transfer of data and instructions.</h4>
+                       <img src="img/harvard.png" alt="">
+                       <h4>Harvard architecture is a type of computer architecture that separates its memory into two parts so
+                            data and instructions are stored separately. The architecture also has separate buses for data
+                            transfers and instruction fetches. This allows the CPU to fetch data and instructions at the same time.</h4>
+                      </div>
+              </div>
+              <div id="mem" class="table-topic-container jumptarget">
+                     <div class="container-body">
+                     <h2>Memory</h2>
+                    </div>
+              </div>
+            </div>
+         </div>  
+        </section>
          <section class="page-container">
           <div class="conatiner introduction">
             
-            <p>Welcome to the World of Microcontrollers, a tiny (yet very powerful) device that changed the face of Embedded Systems. 
-               In this tutorial / article, you will learn about the Rise of Microcontrollers, few Basics of Microcontrollers, Microcontroller’s Structure and also few differences between Microprocessor and Microcontroller.
-               Before going in to the details of Basics of Microcontrollers, you need to know what a Microcontroller</p>
+            <p></p>
                <p> Microcontrollers are similar to Microprocessors, but they have few additional components on the same chip.</p>
           </div>
 
           <div class="conatiner whatis">
 
           <h2>What is a Microcontroller?</h2>
-          <p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.
-          </p>
+          <p></p>
 
           <p>Sometimes, a Microcontroller is also called as a Computer-on-a-Chip or a Single-Chip-Computer. Since the Microcontroller and its supporting circuitry are often embedded in the device it controls, a Microcontroller is also called as an Embedded Controller.
           </p>

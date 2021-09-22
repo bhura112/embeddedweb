@@ -29,8 +29,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://embeddedweb.in/global/header.css" />
-    <link rel="stylesheet" href="https://embeddedweb.in/global/foot.css" />
+    <link rel="stylesheet" href="../global/header.css" />
+    <link rel="stylesheet" href="../global/foot.css" />
     <link rel="stylesheet" href="style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
@@ -97,168 +97,13 @@
       </main>
     </div>
 
-    
-
-    <!-- Main Content ver 1.01 
-    <div class="main-section">
-      <div class="page">
-        <div class="page-head">
-          <p>
-            <img
-              id="page-topic-icon"
-              src="../img/flip-card-front.svg"
-              width="130"
-              height="150"
-            />
-          </p>
-          <div class="page-top-content">
-            <h1 id="page-topic-name">Learn Microcontrollers</h1>
-            <nav class="page-topics">
-              <ul>
-                <li><a class="topic-active" href="#"> Controllers</a></li>
-                <li><a href="/Referances/"> Referances</a></li>
-                <li><a href="/Documents/"> Documents</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="card-section">
-        <h3>Learn Different Controllers</h3>
-        <div class="cc-cards"> 
-
-          
-        
-          <a href="." class="card 8051-card">
-              <h4>8051</h4>
-          </a>
-
-          <a href="." class="card avr-card">
-              <h4>AVR</h4>
-          </a>
-
-          <a href="." class="card pic-card">
-            <h4>PIC</h4>
-          </a>
-
-          <a href="." class="card arm-card">
-          <h4>ARM</h4>
-          </a>
-        </div>
-         
-        </div>
-        <div class="content">
-          <div class="content-section">
-            <ul class="content-tab">
-              <li>
-                <a href=".">
-                  <h3>Micro Controller</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>RISC</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>CISC</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>MEMORY</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>BOOT LOADER</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>GPIO</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>TIMER</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>UART</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>SPI</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>I2C</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-              <li>
-                <a href=".">
-                  <h3>WATCH DOG</h3>
-                  <h3><i class="fas fa-angle-right"></i></h3>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="content-data">
-              <div class="whatIs">
-                <h2>Micro Controllers</h2>
-                <br><br>
-                <p><i class="fa fa-info-circle" aria-hidden="true"></i> Microcontroller is a small computer on a single meta-oxide-semiconductor <i>ic (integrated circuit)</i> <br>or chip. It's also called <i>SOC (small of computer)</i>.</p>
-
-                <p>These micro computers are used for a specific task. A Microcontroller cantains cpu <i>single core or multi-core </i>, <br>memory unit, bootloader, gpio ,Timer, communication interface like : <i> UART, USART, SPI, I2C, Ethernet </i> <br>and many other features.</p>
-              </div>
-              <div class="microcontroller-img">
-               <img src="../img/mircocontroller.svg">
-             </div>
-
-
-             <div class="topic-progress">
-              <div class="topic-area">
-                <div class="topic-details">
-                  <h5> Learn Micro Contollers</h5>
-                  <p> Micro Controllers</p>
-               </div>
-               <div class="topic-bar">
-                   <p>bar</p> 
-               </div>
-              </div>
-              <div class="topic-buttons">
-                <div class="prev"> <a href="."><i class="fas fa-angle-left"></i> Prev </a></div>
-                <div class="next"> <a href=".">Next <i class="fas fa-angle-right"></i></a></div>
-              </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
--->
-    
     <div class="page-space"></div>
     
     <?php include_once '../global/foot.php'; ?>
   </body>
   <script src="script.js"></script>
-  <script src="https://embeddedweb.in/global/headerScript.js"></script>
-  <script src="https://embeddedweb.in/global/footerScript.js"></script>
+  <script src="../global/headerScript.js"></script>
+  <script src="../global/footerScript.js"></script>
   <script
     src="https://kit.fontawesome.com/2197d61e3b.js"
     crossorigin="anonymous"
