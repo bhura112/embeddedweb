@@ -124,7 +124,7 @@ section.top-section-subsec .card-sec a:hover {
  .page-container .topics .table-of-content{
     background-color: #ecebdc;
     flex:1 1 0;
-    margin: -5px 0px;
+    margin: -4px 0px;
     min-width: 350px;
     max-width: 350px;
     align-self:flex-start;
@@ -184,6 +184,16 @@ section.top-section-subsec .card-sec a:hover {
    content: "";
    clear: both;
  }
+ .img-center{
+   display: block;
+   margin: auto;
+ }
+ .img-90p{
+   width: 90%;
+ }
+ .img-50p{
+  width: 50%;
+}
  @media only screen and (max-width: 767px) {
    .top-section .content{
     flex-direction: column;
