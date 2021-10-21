@@ -26,15 +26,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../global/header.css" />
-    <link rel="stylesheet" href="../global/foot.css" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
+    
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/header.css">
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/foot.css">
+
+
+    <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFF1PLC6Q9"></script>
     <script>
@@ -44,8 +53,10 @@
 
       gtag('config', 'G-TFF1PLC6Q9');
     </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title><?php  echo $rowobj->page_title; ?></title>
-  </head>
+</head>
 
   <body>
     <a class="anchor" id="top"></a>
@@ -135,10 +146,10 @@
               <a href="#packaging">Packaging</a>
               <a href="#mem">Memory </a>
               <a href="#io">Input/Output </a>
-              <a href="#timer">Timer</a>
+              <a href="#timer">Timer/Counter</a>
               <a href="#uart" >Uart</a>
-              <a href="#i2c">I2C</a>
-              <a href="#spi">SPI </a>
+              <a href="#spi">SPI</a>
+              <a href="#i2c">I2C </a>
             </div>
             <div class="table-topic">
               <div class="description">   
@@ -310,12 +321,79 @@
                       <h4>The programmer can read a pin's logic state by getting an appropriate bit from a read register.</h4>
                       
                       <h5 class="fa fa-2x"> Data Direction Register</h5>
-                      
-                      <h5 class="fa fa-2x"> Data Write Register</h5>
-                      
-                      <h5 class="fa fa-2x"> Data Read Register</h5>
+                      <h4>DDR decides whether the pins of a port are input pins or output pins</h4>
+                      <h4>If the pin is input, then the voltage at that pin is undecided until an external voltage is applied.</h4>
+                      <h4>If the pin is output, then the voltage at that pin is fixed to a particular value (5V or 0).</h4>
+                      <h5 class="fa fa-2x"> Data Read/Write Register</h5>
+                      <h4>The bits on the PORT register correspond to the pins of the associated port in the same manner as in the case of the DDR register.</h4>
+                      <h4>PORT is used to set the output value.</h4>
+                      <h4>If the pin is set as output, then a PORT value of 1 will set voltage at that pin to 5V. If PORT value is 0, then voltage is set to 0.</h4>
 
                     </div>
+              </div>
+              <div id="timer" class="table-topic-container jumptarget">
+                  <div class="container-body">
+                  <h2>TIMER/COUNTER</h2>
+                  <h4>We use timers every day - the simplest one can be found on your wrist. </h4>
+                  <h4> A simple clock will time the seconds, minutes and hours elapsed in a given day - or in the case of a twelve hour clock, since the
+                       last half-day. AVR timers do a similar job, measuring a given time interval.</h4>
+
+                       <h5 class="fa fa-2x">Timer</h5> <h4>is a specialized type of clock which is used to measure time intervals. </h4> 
+                       <h4> A timer that counts from zero upwards for measuring time elapsed is often called a stopwatch. </h4> 
+                       <h4> It is a device that counts down from a specified time interval and used to generate a time delay, for example, an hourglass is a timer.</h4> 
+                       <h5 class="fa fa-2x">Counter</h5> <h4> is a device that stores the number of times a particular event or process occurred, with respect to a clock signal.</h4>
+                       <h4>It is used to count the events happening outside the microcontroller. </h4>
+                       <h4>In electronics, counters can be implemented quite easily using register-type circuits such as a flip-flop.</h4>
+
+                  </div>
+              </div>
+
+              <div id="uart" class="table-topic-container jumptarget">
+                  <div class="container-body">
+                  <h2>UART/USART</h2>
+                  <h5 class="fa fa-2x">USART</h5>
+                  <h4>USART (Universal Synchronous/Asynchronous Receiver/Transmitter) is a coordinated circuit which is appended to different specialized gadgets. 
+                  <h4>These are fit for changing the parallel information in the sequential structure.The information pace of USART is commonly high since it creates clock data or information. </h4>
+                  <h4>USART is fit for directing the entire procedure in the switch request where sequential information is infused, and the parallel type of the information is created accordingly. 
+                  <h4>In USART, receiver doesn’t have to know the baud-pace of the transmitter as it is gotten from the information line gave by the master and the clock signal. In USART, a clock is generated by sending peripheral that is received by receiving peripheral that can be retrieved from the data stream without knowing the baud pace over time.</h4>
+                  <h5 class="fa fa-2x">UART</h5>
+                  <h4>UART (Universal asynchronous receiver/transmitter) is a large-scale integration gadget offbeat is planned to deal with the transmission of sequential information. </h4>
+                  <h4>It(UART) lies at the center between frameworks that deal with information in a parallel structure and gadgets that handle information in an offbeat sequential structure.</h4>
+                  <h4> UART provides lower data transfer speed as compared to USART. There is no approaching clock signal that is related with the information, so the recipient has to know baud-pace of the transmitter before the inception of gathering.</h4>
+                  <h4> In UART, data clock is generated internally into the microcontroller and synchronized with the data stream using a start bit transition.</h4>
+                  </div>
+              </div>
+
+              
+              <div id="spi" class="table-topic-container jumptarget">
+                  <div class="container-body">
+                  <h2>SPI</h2>
+                  <h4>Serial peripheral interface (SPI) is one of the most widely used interfaces between microcontroller and peripheral ICs such as sensors, ADCs, DACs, shift registers, SRAM, and others.</h4>
+                   <h4>SPI is a synchronous, full duplex master-slave-based interface. The data from the master or the slave is synchronized on the rising or falling clock edge.</h4> 
+                   <h4>Both master and slave can transmit data at the same time. The SPI interface can be either 3-wire or 4-wire. This article focuses on the popular 4-wire SPI interface.</h4>  
+                   <h5>4-wire SPI devices have four signals:</h5>
+                   <img src="img/spi.png" alt="" srcset="">
+                   <h5>Clock (SPI CLK, SCLK)
+                   <h5>Chip select (CS)
+                   <h5>Master out, slave in (MOSI)
+                   <h5>Master in, slave out (MISO)
+                   <h4>The device that generates the clock signal is called the master.</h4> 
+                   <h4>Data transmitted between the master and the slave is synchronized to the clock generated by the master. </h4>
+                   <h4>SPI devices support much higher clock frequencies compared to I2C interfaces. Users should consult the product data sheet for the clock frequency specification of the SPI interface.</h4>
+                 
+                  </div>
+              </div>
+
+
+              
+              <div id="i2c" class="table-topic-container jumptarget">
+                  <div class="container-body">
+                  <h2>I2C/TWI</h2>
+                  <h4>I2C stands for Inter-Integrated Circuit. It is a bus interface connection protocol incorporated into devices for serial communication.</h4>
+                  <h4>The I2C bus was designed by Philips in the early ’80s to allow easy communication between components which reside on the same circuit board. Philips Semiconductors migrated to NXP in 2006.</h4>
+                  <h4>SDA (Serial Data) – The line for the master and slave to send and receive data.</h4>
+                  <h4>SCL (Serial Clock) – The line that carries the clock signal.</h4>
+                </div>
               </div>
             </div>
          </div>  
@@ -586,12 +664,4 @@
     <div class="page-space"></div>
     <?php include_once '../global/foot.php'; ?>
   </body>
-  <script src="script.js"></script>
-  <script src="../global/headerScript.js"></script>
-  <script src="../global/footerScript.js"></script>
-  <script
-    src="https://kit.fontawesome.com/2197d61e3b.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </html>

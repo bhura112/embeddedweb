@@ -29,15 +29,22 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global/header.css">
-    <link rel="stylesheet" href="global/foot.css">
-    <link rel="stylesheet" href="global/style.css">
-    <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
+    
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/header.css">
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/foot.css">
+
+
+    <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFF1PLC6Q9"></script>
     <script>
@@ -47,6 +54,8 @@
 
       gtag('config', 'G-TFF1PLC6Q9');
     </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title><?php  echo $rowobj->page_title; ?></title>
 </head>
 
@@ -55,7 +64,7 @@
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
     <div class="navbar-header">
-    <a class="navbar-brand" href="."><b><?php  echo $rowobj->web_name; ?></b></a>
+    <a class="navbar-brand" href="."> <b><?php  echo $rowobj->web_name; ?></b></a>
     </div>
     <div id="menu-topics" class="menu-topics">
         <ul id="navbar-nav" class="nav navbar-nav">
@@ -280,9 +289,4 @@
 
  <?php include_once 'global/foot.php'?>
 </body>
-<script src="script.js"></script>
-<script src="global/headerScript.js"></script>
-<script src="global/footerScript.js"></script>
-<script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
-
 </html>

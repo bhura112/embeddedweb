@@ -26,15 +26,37 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../../global/header.css" />
-    <link rel="stylesheet" href="../../../../global/foot.css" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
+    <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
+    
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/header.css">
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/foot.css">
+
+
+    <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
+     crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFF1PLC6Q9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TFF1PLC6Q9');
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title><?php  echo $rowobj->page_title; ?></title>
-  </head>
+</head>
 
   <body>
     <a class="anchor" id="top"></a>
@@ -88,69 +110,6 @@
     </div>
     
     <div class="page-space"></div>
-    <footer class="footer-distributed">
- 
- <div class="footer-left">
- 
- <h3>Embedded<span>Web</span></h3>
- 
- <p class="footer-links">
- <a href="https://embeddedweb.in/mcu">Micro Controller</a>
- ·
- <a href="https://embeddedweb.in/rtos">RTOS</a>
- ·
- <a href="https://embeddedweb.in/linux">LINUX</a>
- ·
- <a href="https://embeddedweb.in/qt">QT</a>
- </p>
- 
- <p class="footer-company-name">embeddedweb &copy; 2021</p>
- </div>
- 
- <div class="footer-center">
- 
- <div>
- <i class="fa fa-gavel"></i>
- <a href="http://">Terms & Conditions</a>
- </div>
- 
- <div>
- <i class="fa fa-lock"></i>
- <a href="http://">Privacy Police</a>
- </div>
- 
- <div>
- <i class="fa fa-envelope"></i>
- <p><a href="mailto:contact@embeddedweb.in">contact@embeddedweb.in</a></p>
- </div>
- 
- </div>
- 
- <div class="footer-right">
- 
- <p class="footer-company-about">
- <span>About the company</span>
- Embedded Web is a blog fro Embedded Devlopers,Fimrware/Hardware Desgin,Real Time Operating System and Linux Learner.
- </p>
- 
- <div class="footer-icons">
- 
- <a href="https://facebook.com/embeddedweb"><i class="fa fa-facebook"></i></a>
- <a href="https://twitter.com/embeddedweb"><i class="fa fa-twitter"></i></a>
- <a href="https://youtube.com/embeddedweb"><i class="fa fa-youtube"></i></a>
- <a href="https://github.com/embeddedweb"><i class="fa fa-github"></i></a>
- 
- </div>
- 
- </div>
- </footer>
-  </body>
-  <script src="script.js"></script>
-  <script src="../../../../global/headerScript.js"></script>
-  <script src="../../../../global/footerScript.js"></script>
-  <script
-    src="https://kit.fontawesome.com/2197d61e3b.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <?php include '../../../../global/foot.php'; ?>
+</body>
 </html>
