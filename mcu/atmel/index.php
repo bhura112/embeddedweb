@@ -35,8 +35,7 @@
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bhura112/embeddedweb@main/global/style.css">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bhura112/embeddedweb@master/global/style.css">
 
     <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
 
@@ -107,33 +106,40 @@
         <section class="top-section-subsec">
           <div class="card-sec">
               <a class="card card-background-1" href="mega/">
-              <div class="head"><img src="../../global/icon-mcu.png" alt="" srcset="">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
-              <div class="body">
-                <h4 class="txt-center">ATMEGA</h4>
+                <div class="body">
+                  <h4 class="txt-center">ATmega</h4>
                 </div>
-              <div class="foot">
-                <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
-              </div>
-            </a>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a class="card card-background-2" href="xmega/"> 
-                  <div class="atmellogo">
-                  <h1>XMega</h1>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+              <a class="card card-background-2" href="xmega/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">Xmega</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a class="card card-background-3" href="arduino/"> 
-                  <div class="atmellogo">
-                  <h1>Ardiuno</h1>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
+              <a class="card card-background-3" href="arduino/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">Arduino</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
           
                 </div>
         </section>
