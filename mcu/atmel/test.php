@@ -35,9 +35,7 @@
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
     
-    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/header.css">
-    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/foot.css">
-
+    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/style.css">
 
     <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
 
@@ -54,7 +52,7 @@
       gtag('config', 'G-TFF1PLC6Q9');
     </script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
     <title><?php  echo $rowobj->page_title; ?></title>
 </head>
 
@@ -85,59 +83,34 @@
 
   <div class="main-container">
       <main class="main">
-        <section class="top-section">
-          <div class="content">
-            <picture>
-              <img src="../../img/flip-card-front.svg">
-            </picture>
-            <div class="content-col">
-              <h2 class="center-me">ATMEL</h2>
-         
-              <h4> 
-              AVR is a family of microcontrollers developed since 1996 by Atmel, acquired by Microchip Technology in 2016. These are modified Harvard architecture 8-bit RISC single-chip microcontrollers. AVR was one of the first microcontroller families to use on-chip flash memory for program storage, as opposed to one-time programmable ROM, EPROM, or EEPROM used by other microcontrollers at the time.
 
-           </h4>
-
-              <h4>
-              AVR microcontrollers find many applications as embedded systems. They are especially common in hobbyist and educational embedded applications, popularized by their inclusion in many of the Arduino line of open hardware development boards.
-   </h4>
+        <section class="card-section">
+         <a class="card card-background-1" href="#">
+           <div class="head"><img src="../../global/icon-mcu.png" alt="" srcset="">
+             </div>
+           <div class="body">
+             <h4 class="txt-center">ATMEGA</h4>
             </div>
-          </div>
-        </section> 
-        
-        <section class="top-section-subsec">
-          <div class="card-sec">
-               <a href="mega/"> 
-                  <div class="atmellogo">
-                    <h1>ATMega</h1>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+           <div class="foot">
+             <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+           </div>
+         </a>
 
-               <a href="xmega/"> 
-                  <div class="atmellogo">
-                  <h1>XMega</h1>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
 
-               <a href="arduino/"> 
-                  <div class="atmellogo">
-                  <h1>Ardiuno</h1>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
-          
-                </div>
-        </section>
+         <a class="card card-background-2" href="#">
+           <div class="head "><img src="../../global/icon-mcu.png" alt="" srcset="">
+             </div>
+           <div class="body">
+             <h4 class="txt-center">XMEGA</h4>
+            </div>
+           <div class="foot">
+             <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+           </div>
+         </a>
+         </section>
 
-        <section class="page-container">
+      </main>
+ <!--       <section class="page-container">
           <div class="topics">
             <div class="table-of-content">
               <h3>Table Index</h3>
@@ -156,7 +129,6 @@
                  <p>Atmel's corporate headquarters is in San Jose, California, in the North San Jose Innovation District. Other locations include Trondheim, Norway; Colorado Springs, Colorado; Chennai, India; Shanghai, China; Taipei, Taiwan; Rousset, France; Nantes, France; Patras, Greece; Heilbronn, Germany; Munich, Germany; Whiteley, United Kingdom; Cairo, Egypt. Atmel makes much of its product line at vendor fabrication facilities. It owns a facility in Colorado Springs, Colorado that manufactures its XSense line of flexible touch sensors.</p>
               </div>
              
-              <!------------------------------------------------------------------------------------------------ -->
               <div id="architecture" class="table-topic-container jumptarget">
                      <div class="container-header">
                      <p class="txt-bold-2x">Architectures</p>
@@ -194,7 +166,7 @@
 
             </div>
          </div>  
-        </section>
+        </section>-->
 
       </main>
     </div>

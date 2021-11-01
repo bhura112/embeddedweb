@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@font-face {
+  font-family: eca-fonts;
+  src: url(../global/eca-fonts.ttf);
+}
+a {
+  text-decoration: none;
+}
+.txt-center {
+  text-align: center;
+}
+.main-container {
+  margin: 100px auto;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+ .card-background-1 {
+  background-image: url(../../global/card-overloay-a.png);
+ }
+ .card-background-2 {
+  background-image: url(../../global/card-overloay-b.png);
+ }
+
+
+
