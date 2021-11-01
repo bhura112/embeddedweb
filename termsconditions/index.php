@@ -36,8 +36,7 @@
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/headerScript.js"></script>
     <script src="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/footerScript.js"></script>
     
-    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/header.css">
-    <link rel="stylesheet" href="https://gitcdn.link/repo/bhura112/embeddedweb/main/global/foot.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bhura112/embeddedweb@main/global/style.css">
 
 
     <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
