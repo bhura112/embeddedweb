@@ -1,12 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
-@font-face {
-  font-family: eca-fonts;
-  src: url(../global/eca-fonts.ttf);
+html {
+  font-family: "eca-fonts", "Source Sans Pro", "Helvetica Neue", "Helvetica";
 }
 a {
   text-decoration: none;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #25265e;
+  font-family: euclid_circular_a,arial,source sans pro,helvetica neue,helvetica,arial,sans-serif;
+  text-rendering: optimizeLegibility;
+}
 .main-container {
   margin: 100px auto;
 }
@@ -24,5 +28,79 @@ a {
   background-image: url(../../global/card-overloay-b.png);
  }
 
+ .index-section {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  gap:20px;
+  align-items: flex-start;
+  padding: 20px 60px;
+  }
 
+ .index-table {
+  border: 1px solid rgb(219, 219, 219);
+  display:flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: aliceblue;
+  margin:0px auto;
+  width: 98%;
+ }
 
+ .index-table .row-1{ 
+  border: 1px solid rgb(219, 219, 219);
+  padding: 0;
+ }
+ .index-table .row-1 h3{ 
+  text-align: center;
+}
+
+.index-table .row-2{ 
+  padding: 0;
+}
+ .index-table ul{
+   list-style: none;
+   padding: 0;
+ }
+ .index-table li{
+  padding: 5px 80px 13px 80px;
+}
+.index-table li:hover{
+  background-color: azure;
+}
+.index-table a{
+  color: black;
+  font-size: 15px;
+  font-weight:600;
+}
+ .index-content {
+  background-color: azure;
+  padding: 20px 60px;
+  word-spacing: 5px;
+  line-height: 25px;
+}
+.index-menu-burger {
+  display:none;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
+  .index-table {
+    display: none;
+  }
+  .index-menu-burger {
+    display:block;
+  }
+  .index-section {
+    flex-direction: column;
+    width: 100%;
+    padding:0;
+  }
+  .index-menu-burger {
+    padding: 10px 30px;
+  }
+  .index-content {
+    padding:30px;
+  }
+}

@@ -50,8 +50,9 @@
 
       gtag('config', 'G-TFF1PLC6Q9');
     </script>
-    <script src="script.js"></script>
+    <script src="test.js"></script>
     <link rel="stylesheet" href="test.css">
+   
     <title><?php  echo $rowobj->page_title; ?></title>
 </head>
 
@@ -106,6 +107,42 @@
              <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
            </div>
          </a>
+         </section>
+
+         <section class="index-section">
+
+         <div onclick="burgerIndexClicked()" class="index-menu-burger">
+               <i id="indexburgericon" class="fa fa-bars fa-2x "></i>
+               
+            </div>
+
+            <div class="index-table">
+               <div class="row-1">
+                 <h3>Page Index</h3>
+               </div>
+               <div class="row-2">
+                <ul class="table">
+                  <li><a href="#Architecture"> Architecture </a></li>
+                  <li><a href="#Type"> Type </a></li>
+                  <li><a href="#Setup"> Setup </a></li>
+                </ul>
+               </div>
+            </div>
+
+
+            <div class="index-content">
+                <p>Atmel was acquired by Microchip in April 2016. Atmel Corporation is an industry leader in the design and manufacture of advanced semiconductors, with focus on microcontrollers, nonvolatile memory, logic, radio frequency (RF) components and sensors. These functions are marketed as standard products, application-specific standard products (ASSPs) or customer-specific products (ASICs) in order to provide a rapid and flexible response to the needs of Atmel’s customers.
+
+                </p> <p> Atmel's corporate headquarters is in San Jose, California, in the North San Jose Innovation District. Other locations include Trondheim, Norway; Colorado Springs, Colorado; Chennai, India; Shanghai, China; Taipei, Taiwan; Rousset, France; Nantes, France; Patras, Greece; Heilbronn, Germany; Munich, Germany; Whiteley, United Kingdom; Cairo, Egypt. Atmel makes much of its product line at vendor fabrication facilities. It owns a facility in Colorado Springs, Colorado that manufactures its XSense line of flexible touch sensors.
+
+                  </p>
+            </div>
+         </section>
+
+         <section>
+           <div class="page-index-items">
+             
+           </div>
          </section>
 
       </main>
