@@ -58,23 +58,7 @@
 </head>
 
 <body>
- <header class="header">
-  <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid">
-    <div class="navbar-header">
-    <a class="navbar-brand" href="."><b><?php  echo $rowobj->web_name; ?></b></a>
-    </div>
-    <div id="menu-topics" class="menu-topics">
-        <ul id="navbar-nav" class="nav navbar-nav">
-            <li><a href="../">BACK</a></li>
-        </ul>
-    </div>
-    <div onclick="burgerClicked()" class="burger-menu">
-    <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </div>
-    </div>
-  </nav>
- </header>
+<?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
 <!-------------  ---------------------------------------- Main Content Start----------------------------------------------------------->
 <div class="page-content">
@@ -204,6 +188,6 @@
 </div> 
 <div class="page-space"></div>
 
-<?php include_once '../global/foot.php' ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
 </body>
 </html>

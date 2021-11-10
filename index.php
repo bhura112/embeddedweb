@@ -1,27 +1,9 @@
 <?php 
-
-    require_once 'database/connection.php';
-    $rowobj;
-    $db = new connection();
-
-    $db->database_connect('embedded_web');
-
-    if( $db->g_conn->connect_error) {
-        echo "database error 10500db01";
-        exit();
-    }
-
-    if( $result = $db->g_conn->query("SELECT * FROM index_tab "))
-    {
-        while( $rowobj = $result->fetch_object())
-        {
-        if( $rowobj->page_id == 0)
-        break;
-        }
-        $result -> free_result();
-    }
-
-    $db->g_conn->close();
+   require_once $_SERVER['DOCUMENT_ROOT']."/database/dataHandler.php";
+   GetMain(0);
+   GetHeadData(0);
+   GetBodyData(0);
+   GetfootData(0);
 ?>
 
 <!DOCTYPE html>
@@ -54,38 +36,19 @@
     </script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title><?php  echo $rowobj->page_title; ?></title>
+    <title><?php  echo $mainData['title']; ?></title>
 </head>
 
 <body>
- <header class="header">
-  <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid">
-    <div class="navbar-header">
-    <a class="navbar-brand" href="."> <b><?php  echo $rowobj->web_name; ?></b></a>
-    </div>
-    <div id="menu-topics" class="menu-topics">
-        <ul id="navbar-nav" class="nav navbar-nav">
-            <li><a href="mcu/">MICRO CONTROLLER</a></li>
-            <li><a href="rtos/">RTOS</a></li>
-            <li><a href="linux/">LINUX</a></li>
-            <li><a href="qt/">Qt</a></li>
-        </ul>
-    </div>
-    <div onclick="burgerClicked()" class="burger-menu">
-    <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </div>
-    </div>
-  </nav>
- </header>
 
+<?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 <!-------------  ---------------------------------------- Main Content Start----------------------------------------------------------->
 
 
  <div class="page-content"> 
  <div class="subscription-page">
   <div class="row-0-col-1">
- <h2><?php  echo $rowobj->page_topic; ?></h5>
+ <h2><?php  echo $mainData['topic']; ?></h2>
  <h3> Learn & download free<br/>Design, Simulation,Documents <br/> code and videos</h6>
  <p>Subscribe here for latest <br/>projects and codes</p>
  <form action="#" method="post" class="subscription-form">
@@ -285,6 +248,6 @@
 </main>
  <div class="page-space"></div>
 
- <?php include_once 'global/foot.php'?>
+ <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
 </body>
 </html>

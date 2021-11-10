@@ -58,31 +58,7 @@
 
   <body>
     <a class="anchor" id="top"></a>
-    <header class="header">
-      <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="../"
-              ><b><?php  echo $rowobj->web_name; ?></b></a
-            >
-          </div>
-          <div id="menu-topics" class="menu-topics">
-            <ul id="navbar-nav" class="nav navbar-nav">
-              <li><a href="../../PIC10Fxx">PIC10</a></li>
-              <li class="active"><a href="../../PIC12Fxx">PIC12</a></li>
-              <li><a href="../../PIC16Fxx">PIC16</a></li>
-              <li><a href="../../PIC18Fxx">PIC18</a></li>
-              <li><a href="../../PIC24Fxx">PIC24</a></li>
-              <li><a href="../../PIC32Fxx">PIC32</a></li>
-            </ul>
-          </div>
-
-          <div onclick="burgerClicked()" class="burger-menu">
-            <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
   <div class="main-container">
       <main class="main">
@@ -110,6 +86,6 @@
     </div>
     
     <div class="page-space"></div>
-    <?php include_once '../../../../global/foot.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
   </body>
 </html>

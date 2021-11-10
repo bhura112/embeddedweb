@@ -1,27 +1,9 @@
 <?php 
-   
-   require_once '../../database/connection.php';
-   $rowobj;
-   $db = new connection();
-
-   $db->database_connect('embedded_web');
-
-   if( $db->g_conn->connect_error) {
-     echo "database error 10500db01";
-     exit();
-    }
-   
-    if( $result = $db->g_conn->query("SELECT * FROM index_tab "))
-    {
-        while( $rowobj = $result->fetch_object())
-        {
-        if( $rowobj->page_id == 1)
-        break;
-        }
-        $result -> free_result();
-    }
-
-    $db->g_conn->close();
+   require_once $_SERVER['DOCUMENT_ROOT']."/database/dataHandler.php";
+   GetMain(12);
+   GetHeadData(12);
+   GetBodyData(12);
+   GetfootData(12);
 ?>
 
 <!DOCTYPE html>
@@ -53,33 +35,12 @@
     </script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title><?php  echo $rowobj->page_title; ?></title>
+    <title><?php  echo $mainData['title']; ?></title>
 </head>
 
   <body>
     <a class="anchor" id="top"></a>
-    <header class="header">
-      <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="../"
-              ><b><?php  echo $rowobj->web_name; ?></b></a
-            >
-          </div>
-          <div id="menu-topics" class="menu-topics">
-            <ul id="navbar-nav" class="nav navbar-nav">
-              <li><a href="../atmel">ATMEL</a></li>
-              <li  class="active"><a href=".">MICROCHIP</a></li>
-              <li><a href="../arm">ARM</a></li>
-            </ul>
-          </div>
-
-          <div onclick="burgerClicked()" class="burger-menu">
-            <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
   <div class="main-container">
       <main class="main">
@@ -89,7 +50,7 @@
               <img src="../../img/flip-card-front.svg">
             </picture>
             <div class="content-col">
-              <h2 class="center-me">MICROCHIP</h2>
+              <h2 class="center-me"><?php  echo $mainData['topic']; ?></h2>
          
               <h4> 
                  Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. 
@@ -103,70 +64,87 @@
             </div>
           </div>
         </section> 
-        
         <section class="top-section-subsec">
           <div class="card-sec">
-               <a href="PIC10Fxx/"> 
-                  <div class="mchiplogo">
-                    <h2>PIC10</h2>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+              <a class="card card-background-1" href="PIC10Fxx/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC10Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a href="PIC12Fxx/"> 
-                  <div class="mchiplogo">
-                  <h2>PIC12</h2>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+              <a class="card card-background-2" href="PIC12Fxx/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC12Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a href="PIC16Fxx/"> 
-                  <div class="mchiplogo">
-                  <h2>PIC16</h2>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
+              <a class="card card-background-3" href="PIC16Fxx/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC10Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-                <a href="PIC18Fxx/"> 
-                  <div class="mchiplogo">
-                  <h2>PIC18</h2>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
+              <a class="card card-background-2" href="PIC18Fxx/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC18Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-                <a href="PIC24Fxx/"> 
-                  <div class="mchiplogo">
-                  <h2>PIC24</h2>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
 
-                <a href="PIC32Fxx/"> 
-                  <div class="mchiplogo">
-                  <h2>PIC32</h2>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
+              <a class="card card-background-1" href="PIC24Fxx/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC24Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-          
+
+              <a class="card card-background-2" href="arduino/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">PIC32Fxx</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
                 </div>
         </section>
       </main>
     </div>
     
     <div class="page-space"></div>
-    <?php include_once '../../global/foot.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
   </body>
 </html>

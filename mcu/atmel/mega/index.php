@@ -144,6 +144,6 @@
       </main>
     </div>    
     <div class="page-space"></div>
-    <?php include_once '../../../global/foot.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
   </body>
 </html>

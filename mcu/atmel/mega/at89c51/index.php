@@ -58,28 +58,7 @@
 
   <body>
     <a class="anchor" id="top"></a>
-    <header class="header">
-      <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="../"
-              ><b>Embedded Web</b></a
-            >
-          </div>
-          <div id="menu-topics" class="menu-topics">
-            <ul id="navbar-nav" class="nav navbar-nav">
-              <li class="active"><a href="../../mega">ATMega</a></li>
-              <li><a href="../../xmega">XMega</a></li>
-              <li><a href="../../arduino">Arduino</a></li>
-            </ul>
-          </div>
-
-          <div onclick="burgerClicked()" class="burger-menu">
-            <i id="burgericon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+   <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
   <div class="main-container">
       <main class="main">
@@ -99,6 +78,6 @@
     </div>
     
     <div class="page-space"></div>
-    <?php include_once '../../../../global/foot.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
   </body>
 </html>
