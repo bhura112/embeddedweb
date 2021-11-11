@@ -1,12 +1,11 @@
-
-@font-face {
-  font-family: eca-fonts;
-  src: url("eca-fonts.ttf");
- }
- 
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("header.css");
 @import url("foot.css");
 
+@font-face {
+ font-family: eca-fonts;
+ src: url(../global/eca-fonts.ttf);
+}
 html {
   -webkit-text-size-adjust: 100%;
 }
