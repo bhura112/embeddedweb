@@ -6,15 +6,6 @@
  font-family: eca-fonts;
  src: url(../global/eca-fonts.ttf);
 }
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: euclid_circular_a,arial,source sans pro,helvetica neue,helvetica,arial,sans-serif;
-  text-rendering: optimizeLegibility;
-}
 
 a {
     text-decoration: none;
@@ -43,7 +34,7 @@ a {
   }
  
   .card:hover {
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   box-shadow: 0 4px 8px 0 rgba(39, 26, 26, 0.4);
    transition: 0.3s;
   }
   .card .head {
