@@ -1,9 +1,22 @@
+@font-face {
+    font-family: eca-fonts;
+    src: url(../global/eca-fonts-a.ttf);
+   }
+   html {
+    --top-spacing: 200px;
+  }
 
-
-h1, h2, h3, h4, h5, h6 ,a{
-    font-family:'eca-fonts',"Lato", sans-serif;
-    margin: 0;
+body{
+    scroll-padding-top: var(--top-spacing);
+    font-family:'eca-fonts',"Lato", sans-serif; 
     color: #25265e;
+    margin: var(--top-spacing) 0;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 ,a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .page-space {
@@ -82,13 +95,94 @@ h1, h2, h3, h4, h5, h6 ,a{
   }
 
   .hrc-bottom{
-      height: 1px;
-      background-color: #3a4452;
+      color: rgba(37,38,94,.5);
       border-radius: 3px;
   }
-
+p{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
   .ct-h-p{
       margin-bottom: 20px;
       font-size: 36px;
-      font-family: "euclid_circular_a";
+      font-weight: 600;
+      line-height: 40px;
+  }
+
+  .ct-d-p{
+
+    color: rgba(37,38,94,.7);
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 30px;
+  }
+
+  .table-icon {
+    display: none;
+    position: fixed;
+    top:200px;
+    right: 0px;
+}
+.table-icon:hover{
+    cursor: pointer;
+}
+.menu-open-icon{
+    font-size: 25px;
+    background-color: antiquewhite;
+    color: rgb(70, 60, 78);
+}
+  @media (max-width: 768px){
+    .page-content {
+        flex-direction: column;
+    }
+    .table-container {
+        width: 100%;
+        display: none;
+    }
+    .content-container{
+        width: 100%;
+    }
+    .table-icon {
+        display: block;
+    }
+
+    .MO-clicked{
+        display:flex !important;
+        flex-flow: column wrap;
+        top:50px;
+        right: 0px;
+        z-index: 1;
+        width: 90%;
+        height:100%;
+        justify-content: space-around;
+        position: absolute;
+        background-color: #c0b49c;
+        box-shadow: 0 10px 10px -5px gray;
+        animation: MO-menu-anim .5s 1 ease-in;
+        border: 0;
+    }
+
+    .MO-close{
+        right:90%;
+        animation: MO-menu-anim .5s 1 ease-in;
+        border: 0;
+    }
+    @keyframes MO-menu-anim {
+        from {
+            right: -500px;
+        }
+        to {
+            right: 0px;
+        }
+    }
+    .header .navbar .container-fluid .navbar-header{
+        padding: 20px;
+    } 
+    .header .navbar .container-fluid .nav li a{
+        padding: 20px;
+    }
+    .MO-menu {
+        display:block;
+    }
   }

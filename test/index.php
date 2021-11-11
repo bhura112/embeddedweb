@@ -1,3 +1,11 @@
+<?php 
+   require_once $_SERVER['DOCUMENT_ROOT']."/database/dataHandler.php";
+   GetMain(0);
+   GetHeadData(0);
+   GetBodyData(0);
+   GetfootData(0);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +42,13 @@
 </head>
 
   <body>
-
-  <span class="material-icons-outlined airPlayIcon">
-airplay
-</span>
+  <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
    <div class="page-content">
-       <div class="table-container">
+       <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+         <i class="material-icons-outlined menu-open-icon">menu_open</i>
+       </div>
+
+       <div id= "table-container" class="table-container">
         <div class="table">
             <div class="table-header">
                  
@@ -60,25 +69,26 @@ airplay
 
        <div class="content-container">
            <div class="abt-pg">
-           <p class="ct-h-p">Stack Data Structure</p>
-            <p>CSS Linear Gradients ... 
-            To create a linear gradient you must define at least two color stops. 
-            Color stops are the colors you want to render smooth transitions 
-             <br>
-            A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
-        </p> </div>
-        <hr class="hrc-bottom">
+           <h1 class="ct-h-p">Stack Data Structure</h1>
+            <p class="ct-d-p">
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr class="hrc-bottom">
+        </div>
+       
 
         <div class="abt-pg">
-        <p class="ct-h-p">Queue Data Structure</p>
-        <br>
-            <p>CSS Linear Gradients ... 
-            To create a linear gradient you must define at least two color stops. 
-            Color stops are the colors you want to render smooth transitions 
-             <br>
-            A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
-        </p> </div>
-        <hr class="hrc-bottom">
+          <p class="ct-h-p">Queue Data Structure</p>
+          <br>
+              <p>CSS Linear Gradients ... 
+              To create a linear gradient you must define at least two color stops. 
+              Color stops are the colors you want to render smooth transitions 
+              <br>
+              A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
+          </p> 
+          <hr class="hrc-bottom">
+        </div>
+        
        </div>
       
    </div>
