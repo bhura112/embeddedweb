@@ -70,32 +70,41 @@
         
         <section class="top-section-subsec">
           <div class="card-sec">
-               <a href="atmel/"> 
-                  <div class="atmellogo">
-                    <p><img src="img/atmellogo.svg" style="width:80%;"></p>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+          <a class="card card-background-1" href="atmel/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">ATMEL</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a href="microchip/"> 
-                  <div class="mchiplogo">
-                    <p><img src="img/microchiplogo.svg" style="width:80%;"> </p> 
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+              <a class="card card-background-2" href="microchip/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">MICROCHIP</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
 
-               <a href="arm/"> 
-                  <div class="armlogo">
-                   <p><img src="img/armlogo.svg" style="width:80%;"> </p>
-                   <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div>  
-                  </div> 
-                </a>
+              <a class="card card-background-3" href="amr/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h4 class="txt-center">ARM</h4>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
                 </div>
         </section>
 
