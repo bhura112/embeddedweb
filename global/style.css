@@ -31,11 +31,13 @@ a {
     background-size: cover;
     border-radius: 10%;
     font-size: 16px;
+    transition: all 0.5s ease-in;
   }
  
   .card:hover {
-   box-shadow: 0 4px 8px 0 rgba(39, 26, 26, 0.4);
-   transition: 0.3s;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   transition: all 1s ease-out;
+   transform: scale(1.2);
   }
   .card .head {
     min-height: 10px;

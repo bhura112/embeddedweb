@@ -1,5 +1,7 @@
+
+
 h1, h2, h3, h4, h5, h6 ,a{
-    font-family: euclid_circular_a,arial,source sans pro,helvetica neue,helvetica,arial,sans-serif;
+    font-family:'eca-fonts',"Lato", sans-serif;
     margin: 0;
     color: #25265e;
 }
@@ -66,3 +68,26 @@ h1, h2, h3, h4, h5, h6 ,a{
   word-spacing: 4px;   
   font-kerning: normal;
 }
+
+.airPlayIcon {
+    font-size: 200px;
+    color: aquamarine;
+    
+    transition:all 1s ease-out;
+  }
+
+  .airPlayIcon:hover {
+    color: rgb(12, 42, 32);
+    transition:all 1s ease-in;
+  }
+
+  .hrc-bottom{
+      height: 1px;
+      background-color: #3a4452;
+      border-radius: 3px;
+  }
+
+  .ct-h-p{
+      font-size: 30px;
+      font-weight: 600;
+  }

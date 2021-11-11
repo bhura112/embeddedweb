@@ -9,10 +9,13 @@
     <script src="https://bhura112.github.io/embeddedweb/global/headerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
     
-<link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
-
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">
+    
     <link rel = "icon" href = "https://bhura112.github.io/embeddedweb/global/logo.png" type="image/x-icon">
-
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
@@ -31,11 +34,10 @@
 </head>
 
   <body>
-    <a class="anchor" id="top"></a>
-    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
-    <div class="page-space"></div>
-
+  <span class="material-icons-outlined airPlayIcon">
+airplay
+</span>
    <div class="page-content">
        <div class="table-container">
         <div class="table">
@@ -58,15 +60,27 @@
 
        <div class="content-container">
            <div class="abt-pg">
-            <h3>CSS Linear Gradients ... 
+           <p class="ct-h-p">Stack Data Structure</p>
+            <p>CSS Linear Gradients ... 
             To create a linear gradient you must define at least two color stops. 
             Color stops are the colors you want to render smooth transitions 
              <br>
             A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
-        </h3> </div>
-       </div>
+        </p> </div>
+        <hr class="hrc-bottom">
 
+        <div class="abt-pg">
+        <p class="ct-h-p">Queue Data Structure</p>
+        <br>
+            <p>CSS Linear Gradients ... 
+            To create a linear gradient you must define at least two color stops. 
+            Color stops are the colors you want to render smooth transitions 
+             <br>
+            A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
+        </p> </div>
+        <hr class="hrc-bottom">
+       </div>
+      
    </div>
-   <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/foot.php"; ?>
   </body>
 </html>

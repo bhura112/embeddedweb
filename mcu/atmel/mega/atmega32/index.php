@@ -35,7 +35,9 @@
     <script src="https://bhura112.github.io/embeddedweb/global/headerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
     
-<link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
+    <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">
 
     <link rel = "icon" href = "https://bhura112.github.io/embeddedweb/global/logo.png" type="image/x-icon">
 
