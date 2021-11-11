@@ -37,7 +37,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bhura112/embeddedweb@master/global/style.css">
 
-    <link rel = "icon" href = "https://www.embeddedweb.in/global/logo.png?i=1" type="image/x-icon">
+    <link rel = "icon" href = "https://cdn.jsdelivr.net/gh/bhura112/embeddedweb@main/global/logo.png" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
