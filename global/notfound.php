@@ -10,6 +10,7 @@
     <div class="errr">
         <h1> Page not found !</h1>
         <p> Please check url</p>
+        <a href="../">Back To Home.</a>
     </div>
 </body>
 </html>

@@ -140,6 +140,10 @@ p{
         width: 100%;
         display: none;
     }
+    .table {
+        border:0;
+        box-shadow: 0;
+    }
     .content-container{
         width: 100%;
     }
@@ -161,8 +165,9 @@ p{
         box-shadow: 0 10px 10px -5px gray;
         animation: MO-menu-anim .5s 1 ease-in;
         border: 0;
+        position: fixed;
     }
-
+   
     .MO-close{
         right:90%;
         animation: MO-menu-anim .5s 1 ease-in;

@@ -53,13 +53,13 @@
             <div class="table-header">
                  
             </div>
-            <div class="table-body">
+            <div id="MO-table" class="table-body">
                 
-                     <h3 href="#"> <a href="#">Architecture </a></h3>
-                     <h3 href="#"> <a href="#">Type </a></h3>
-                     <h3 href="#"> <a href="#">Documents </a> </h3>
-                     <h3 href="#"> <a href="#">Source code </a> </h3>
-                     <h3 href="#"> <a href="#">Data </a> </h3>
+                     <h3 > <a href="#Stack">Stack </a></h3>
+                     <h3 > <a href="#Queue">Queue </a></h3>
+                     <h3 > <a href="#Linklist">Linklist </a> </h3>
+                     <h3 > <a href="#Tree">Tree</a> </h3>
+                     <h3 > <a href="#Graph">Graph </a> </h3>
             </div>
             <div class="table-body">
                
@@ -68,26 +68,49 @@
        </div>
 
        <div class="content-container">
-           <div class="abt-pg">
-           <h1 class="ct-h-p">Stack Data Structure</h1>
+
+         <div id="Stack" class="abt-pg">
+           <h1 class="ct-h-p">Stack</h1>
             <p class="ct-d-p">
             In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
             </p>
             <hr class="hrc-bottom">
-        </div>
+          </div>
        
 
-        <div class="abt-pg">
-          <p class="ct-h-p">Queue Data Structure</p>
-          <br>
-              <p>CSS Linear Gradients ... 
-              To create a linear gradient you must define at least two color stops. 
-              Color stops are the colors you want to render smooth transitions 
-              <br>
-              A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
-          </p> 
-          <hr class="hrc-bottom">
-        </div>
+          <div id="Queue" class="abt-pg">
+           <h1 class="ct-h-p">Queue</h1>
+            <p class="ct-d-p">
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr class="hrc-bottom">
+          </div>
+
+          <div id="Linklist" class="abt-pg">
+           <h1 class="ct-h-p">Linklist</h1>
+            <p class="ct-d-p">
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr class="hrc-bottom">
+          </div>
+
+
+          <div id="Tree" class="abt-pg">
+           <h1 class="ct-h-p">Tree</h1>
+            <p class="ct-d-p">
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr class="hrc-bottom">
+          </div>
+
+          <div id="Graph" class="abt-pg">
+           <h1 class="ct-h-p">Graph</h1>
+            <p class="ct-d-p">
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr class="hrc-bottom">
+          </div>
+          
         
        </div>
       
