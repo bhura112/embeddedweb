@@ -3,7 +3,8 @@
     src: url(../global/eca-fonts-a.ttf);
    }
    html {
-    --top-spacing: 200px;
+    --top-spacing: 70px;
+    scroll-behavior: smooth;
   }
 
 body{
@@ -19,35 +20,88 @@ h1, h2, h3, h4, h5, h6 ,a{
     box-sizing: border-box;
 }
 
-.page-space {
-    min-height: 400px;
+
+.body-top-section{
     width: 100%;
+    padding-top: 100px;    
+    background-color: #f9fafc;
+    padding: 20px 30px;
+    line-height: 26px;
+    word-spacing: 4px; 
 }
 
+.body-card-section {
+    display: flex;
+    padding: 5rem 0px;
+    flex-direction: row;
+    justify-content: center;
+}
+  .card-sec {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     align-items: center; 
+     font-size: 20px;
+     column-gap:3rem;
+     row-gap:2rem;
+  }
+
+.card {
+       display: flex;
+       flex-direction: column;
+  }
+
+.card h2{
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.card h4{
+      padding: 20px 0px;
+      font-size: 16px;
+      font-weight: bolder;
+}
+  .card-background-1 {
+    background-image: url(../../global/card-overloay-a.png);
+   }
+   .card-background-2 {
+    background-image: url(../../global/card-overloay-b.png);
+   }
+   .card-background-3 {
+    background-image: url(../../global/card-overloay-c.png);
+   }
+
+
 .page-content {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    margin: 0px auto;
+    justify-content:center;
+    scroll-padding-top: 1000px;
 }
 
 .table-container {
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
+    animation: MO-menu-anim .5s 1 ease-in;
 }
 
 .table {
     margin: 0px auto;
-    display: flex;
+    display: flex;    
     flex-direction: column;
     border: #e1e8f1 1px solid;
     border-radius: 6px;
-    
     box-shadow: 1px 2px 3px rgb(167, 167, 167);
+    width: 70%;
 }
 .table .table-header {
 }
 .table .table-body {
+
 }
 .table .table-body  h3 {
     border-bottom: #e1e8f1 1px solid;
@@ -55,17 +109,18 @@ h1, h2, h3, h4, h5, h6 ,a{
 .table .table-body  h3 a{
   font-weight: 700;
   font-kerning: inherit;
-  font-size: 22px;
+  font-size: 1.2rem;
   line-height: 24px;
   position: relative;
   color: #051833;
   display: flex;
   justify-content: flex-start;
-  padding: 20px 100px;
+  padding: 20px 30px;
+  background-color: #F2F3E8;
 }
-.table .table-body  h3 a:hover{
-    box-shadow: 2px 1px 2px #41463f;
-    color: #1e2727;
+.table .table-body  h3 a:hover {
+    zoom: 1;
+    background-color:  #f7f8e5;
 }
 .table .table-footer {
     
@@ -74,51 +129,24 @@ h1, h2, h3, h4, h5, h6 ,a{
 .content-container {
     width: 70%;
 }
-
-.abt-pg{
-  padding: 30px;
+.pg{
+  padding: 20px 30px;
   line-height: 26px;
   word-spacing: 4px;   
   font-kerning: normal;
+  min-height: 1000px;
+  background-color: #e1e8f1;
+  scroll-margin-top: 5rem;
+}
+.pg-content{
+    padding: 0px 5px;
 }
 
-.airPlayIcon {
-    font-size: 200px;
-    color: aquamarine;
-    
-    transition:all 1s ease-out;
-  }
-
-  .airPlayIcon:hover {
-    color: rgb(12, 42, 32);
-    transition:all 1s ease-in;
-  }
-
-  .hrc-bottom{
+hr{
       color: rgba(37,38,94,.5);
       border-radius: 3px;
   }
-p{
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-}
-  .ct-h-p{
-      margin-bottom: 20px;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 40px;
-  }
-
-  .ct-d-p{
-
-    color: rgba(37,38,94,.7);
-    font-weight: 500;
-    margin-bottom: 16px;
-    line-height: 30px;
-  }
-
-  .table-icon {
+ .table-icon {
     display: none;
     position: fixed;
     top:200px;
@@ -128,13 +156,27 @@ p{
     cursor: pointer;
 }
 .menu-open-icon{
-    font-size: 25px;
+    font-size: 30px;
     background-color: antiquewhite;
     color: rgb(70, 60, 78);
 }
+
+.jumptarget1::before {
+    content:"";
+    display:block;
+    height:250px; 
+    margin-top:-100px; 
+  }
+  .clearafter::after{
+    content: "";
+    clear: both;
+  }
+
   @media (max-width: 768px){
+
     .page-content {
         flex-direction: column;
+        width: 100%;
     }
     .table-container {
         width: 100%;
@@ -154,22 +196,23 @@ p{
     .MO-clicked{
         display:flex !important;
         flex-flow: column wrap;
-        top:50px;
+        top:0px;
         right: 0px;
-        z-index: 1;
+        z-index: 99999;
         width: 90%;
         height:100%;
         justify-content: space-around;
         position: absolute;
-        background-color: #c0b49c;
+        background-color: #F2F3E8;
         box-shadow: 0 10px 10px -5px gray;
         animation: MO-menu-anim .5s 1 ease-in;
         border: 0;
         position: fixed;
+        border-left:6px solid gray;
     }
    
     .MO-close{
-        right:90%;
+        right:91%;
         animation: MO-menu-anim .5s 1 ease-in;
         border: 0;
     }

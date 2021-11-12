@@ -1,7 +1,7 @@
 <?php 
    require_once $_SERVER['DOCUMENT_ROOT']."/database/dataHandler.php";
-   GetMain(0);
-   GetHeadData(0);
+   GetMain(1);
+   GetHeadData(1);
    GetBodyData(0);
    GetfootData(0);
 ?>
@@ -43,7 +43,63 @@
 
   <body>
   <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
-   <div class="page-content">
+   
+  <section class="body-top-section">
+         
+              <h1><?php  echo $mainData['topic']; ?></h1>
+         
+              <p> 
+                 Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. 
+                 A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. 
+              </p>
+
+              <p>
+                 Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general 
+                 purpose applications consisting of various discrete chips.
+               </p>
+  </section> 
+        
+        <section class="body-card-section">
+          <div class="card-sec">
+          <a class="card card-background-1" href="atmel/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h2 class="txt-center">ATMEL</h2>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+
+              <a class="card card-background-2" href="microchip/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h2 class="txt-center">MICROCHIP</h2>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+
+              <a class="card card-background-3" href="amr/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h2 class="txt-center">ARM</h2>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+                </div>
+        </section>
+  
+  <div class="page-content">
        <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
          <i class="material-icons-outlined menu-open-icon">menu_open</i>
        </div>
@@ -69,46 +125,64 @@
 
        <div class="content-container">
 
-         <div id="Stack" class="abt-pg">
-           <h1 class="ct-h-p">Stack</h1>
-            <p class="ct-d-p">
-            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
-            </p>
-            <hr class="hrc-bottom">
+         <div id="Stack" class="pg">
+            
+            <div class="pg-content">
+              <h1>Stack</h1>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <h4><strong>Type of stack data structure</strong></h4>
+              
+              <h5>1.Reverse Stack</h5>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <a href=".">show is link</a>
+              <h5>1.Forword Stack</h5>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+            </div>
+            <hr>
           </div>
        
 
-          <div id="Queue" class="abt-pg">
-           <h1 class="ct-h-p">Queue</h1>
-            <p class="ct-d-p">
+          <div id="Queue" class="pg">
+           <h1>Queue</h1>
+            <p>
             In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
             </p>
-            <hr class="hrc-bottom">
+            <hr>
           </div>
 
-          <div id="Linklist" class="abt-pg">
-           <h1 class="ct-h-p">Linklist</h1>
-            <p class="ct-d-p">
+          <div id="Linklist" class="pg">
+           <h1>Linklist</h1>
+            <p>
             In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
             </p>
-            <hr class="hrc-bottom">
+            <hr>
           </div>
 
 
-          <div id="Tree" class="abt-pg">
-           <h1 class="ct-h-p">Tree</h1>
-            <p class="ct-d-p">
+          <div id="Tree" class="pg">
+           <h1>Tree</h1>
+            <p>
             In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
             </p>
-            <hr class="hrc-bottom">
+            <hr>
           </div>
 
-          <div id="Graph" class="abt-pg">
-           <h1 class="ct-h-p">Graph</h1>
-            <p class="ct-d-p">
+          <div id="Graph" class="pg">
+           <h1>Graph</h1>
+            <p>
             In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
             </p>
-            <hr class="hrc-bottom">
+            <hr>
           </div>
           
         

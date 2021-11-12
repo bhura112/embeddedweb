@@ -94,8 +94,8 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    background-color: #2980b9;
-    box-shadow: 0 10px 10px -5px gray;
+    background-color:  var(--header-bg-color);
+    box-shadow: 0 10px 10px -5px  var(--header-bg-color);
     animation: burger-menu-anim .5s 1 ease-in;
 }
 @keyframes burger-menu-anim {
