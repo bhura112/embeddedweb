@@ -38,6 +38,7 @@
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
     
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">

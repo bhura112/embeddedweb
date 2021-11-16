@@ -17,6 +17,7 @@
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
     
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">
@@ -42,41 +43,34 @@
 
   <body>
 
-    <a class="anchor" id="top"></a>
+  <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
+  
+  <div class="top-spacing"></div> 
 
-    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
-
-  <div class="main-container">
-      <main class="main">
-        <section class="top-section">
-          <div class="content">
-            <picture>
-              <img src="../img/flip-card-front.svg">
-            </picture>
-            <div class="content-col">
-              <h2 class="center-me"><?php  echo $mainData['topic']; ?></h2>
-         
-              <h4> 
-                 Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. 
-                 A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. 
-              </h4>
-
-              <h4>
-                 Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general 
-                 purpose applications consisting of various discrete chips.
-               </h4>
+  <div class="body-top-contents">
+        <div class="row-1"></div>
+        <div class="row-2">
+            <div class="col-1">
+            <span class="material-icons-outlined">memory</span>
             </div>
-          </div>
-        </section> 
-        
-        <section class="top-section-subsec">
-          <div class="card-sec">
+            <div class="col-2">
+                <h1><?php  echo $mainData['topic']; ?></h1>
+                <p> Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. 
+                 A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. 
+             <br><br> Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general 
+                 purpose applications consisting of various discrete chips.</p>
+            </div>
+        </div>
+        <div class="row-3"></div>
+    </div>
+           
+    <div class="body-cards-div">
           <a class="card card-background-1" href="atmel/">
                 <div class="head">
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">ATMEL</h4>
+                  <h2 class="txt-center">ATMEL</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
@@ -88,7 +82,7 @@
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">MICROCHIP</h4>
+                  <h2 class="txt-center">MICROCHIP</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
@@ -100,36 +94,113 @@
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">ARM</h4>
+                  <h2 class="txt-center">ARM</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
                 </div>
               </a>
-                </div>
-        </section>
+     </div>
+  
+  <div class="page-content">
+       <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+         <i class="material-icons-outlined menu-open-icon">menu_open</i>
+       </div>
 
-        <section class="page-container">
-          <div class="topics">
-            <div class="table-of-content">
-              <h3>Table Index</h3>
-              <a href="#architecture">Architectures</a>
-              <a href="#packaging">Packaging</a>
-              <a href="#mem">Memory </a>
-              <a href="#io">Input/Output </a>
-              <a href="#timer">Timer/Counter</a>
-              <a href="#uart" >Uart</a>
-              <a href="#spi">SPI</a>
-              <a href="#i2c">I2C </a>
+       <div id= "table-container" class="table-content-container">
+        <div class="table">
+            <div class="table-header">
+                 
             </div>
-            <div class="table-topic">
-              <div class="description">   
-                <p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.</p>
+            <div id="MO-table" class="table-body">
+                     <h3 > <a href="#Introduction">Introduction </a></h3>
+                     <h3 > <a href="#Architectures">Architectures </a></h3>
+                     <h3 > <a href="#Packaging">Packaging </a></h3>
+                     <h3 > <a href="#Memory">Memory </a> </h3>
+                     <h3 > <a href="#IO">Input/Output</a> </h3>
+                     <h3 > <a href="#Timer">Timer/Counter </a> </h3>
+                     <h3 > <a href="#Uart">Uart/Usart</a> </h3>
+                     <h3 > <a href="#Spi">SPI </a> </h3>
+                     <h3 > <a href="#i2c">I2C </a> </h3>
+            </div>
+            <div class="table-body">
+               
+            </div>
+        </div>
+       </div>
+
+       <div class="content-container">
+
+         <div id="Introduction" class="content">
+            <div class="container">
+              <h1>SOC(Small Of Computers)</h1>
+                 <p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.</p>
                  <img class="img-center" src="img/mcu.svg" alt="" srcset="">
                  <p>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.</p>
                  <p>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.</p>
                  <p> Microcontrollers are similar to Microprocessors, but they have few additional components on the same chip.</p>
-              </div>
+              
+              <figure class="fig-sim"> 
+                <img src="img/dip.png" alt="" srcset="">
+                <figcaption> Micro Controllers</figcaption>
+              </figure>
+            
+            </div>
+            <hr>
+          </div>
+       
+
+          <div id="Architectures" class="content">
+            <div class="container">
+              <h1>Architectures</h1>
+              <p>A Microcontroller is a VLSI (Very Large Scale Integration) Integrated Circuit (IC) that contains electronic computing unit and logic unit (combinedly known as CPU), Memory (Program Memory and Data Memory), I/O Ports (Input / Output Ports) and few other components integrated on a single chip.</p>
+                 <img class="img-center" src="img/mcu.svg" alt="" srcset="">
+                 <p>Microcontrollers are omnipresent. If a device or an application involves measuring, storing, calculating, controlling or displaying information, then device contains a Microcontroller in it. Let us see some of the areas where microcontrollers are used.</p>
+                 <p>The biggest user of Microcontrollers is probably the Automobiles Industry. Almost every car that comes out of the assembly factory contains at least one Microcontroller for the purpose of engine control. You can find many more Microcontrollers for controlling additional systems.</p>
+                 <p> Microcontrollers are similar to Microprocessors, but they have few additional components on the same chip.</p>
+              
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+
+              <p>
+              <strong> In this tutorial</strong>, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <h3><strong>Type of stack data structure</strong></h3>
+              
+              <h4>1.Reverse Stack</h4>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <a href=".">Learn More ></a>
+              <h4>1.Forword Stack</h4>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Stack represtation smiliar to pile of plates</figcaption>
+              </figure>
+             <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+            </div>
+            <hr>
+          </div>
+          
+        
+       </div>
+      
+   </div>
+
+  
+        <section class="page-container">
+          <div class="topics">
+            <div class="table-of-content">
+              <h3>Table Index</h3>
+             
+            </div>
+            <div class="table-topic">
+              <div class="description">   
+               </div>
              
               <!------------------------------------------------------------------------------------------------ -->
               <div id="architecture" class="table-topic-container jumptarget">

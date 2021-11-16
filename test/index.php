@@ -18,13 +18,13 @@
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
     
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">
     
     <link rel = "icon" href = "https://bhura112.github.io/embeddedweb/global/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
