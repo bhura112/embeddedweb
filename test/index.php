@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/headerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
+    <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
     
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
@@ -23,7 +24,6 @@
     
     <link rel = "icon" href = "https://bhura112.github.io/embeddedweb/global/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    
     <script src="https://kit.fontawesome.com/2197d61e3b.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8795837294797076"
      crossorigin="anonymous"></script>
@@ -43,24 +43,23 @@
 
   <body>
   <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
-   
-  <section class="body-top-section">
-         
-              <h1><?php  echo $mainData['topic']; ?></h1>
-         
-              <p> 
-                 Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. 
-                 A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. 
-              </p>
-
-              <p>
-                 Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general 
-                 purpose applications consisting of various discrete chips.
-               </p>
-  </section> 
-        
-        <section class="body-card-section">
-          <div class="card-sec">
+  <div class="top-spacing"></div> 
+  <div class="body-top-contents">
+        <div class="row-1"></div>
+        <div class="row-2">
+            <div class="col-1">
+            <span class="material-icons-outlined">memory</span>
+            </div>
+            <div class="col-2">
+                <h1>Micro Controller</h1>
+                <p>Microcontroller is a small computer on a single metal-oxide-semiconductor (MOS) integrated circuit (IC) chip. A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals.
+               <br><br>Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general purpose applications consisting of various discrete chips.</p>
+            </div>
+        </div>
+        <div class="row-3"></div>
+    </div>
+           
+    <div class="body-cards-div">
           <a class="card card-background-1" href="atmel/">
                 <div class="head">
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
@@ -96,15 +95,14 @@
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
                 </div>
               </a>
-                </div>
-        </section>
+     </div>
   
   <div class="page-content">
        <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
          <i class="material-icons-outlined menu-open-icon">menu_open</i>
        </div>
 
-       <div id= "table-container" class="table-container">
+       <div id= "table-container" class="table-content-container">
         <div class="table">
             <div class="table-header">
                  
@@ -125,26 +123,31 @@
 
        <div class="content-container">
 
-         <div id="Stack" class="pg">
+         <div id="Stack" class="content">
             
-            <div class="pg-content">
+            <div class="container">
               <h1>Stack</h1>
               <p>
               In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
               </p>
 
               <p>
-              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              <strong> In this tutorial</strong>, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
               </p>
-              <h4><strong>Type of stack data structure</strong></h4>
+              <h3><strong>Type of stack data structure</strong></h3>
               
-              <h5>1.Reverse Stack</h5>
+              <h4>1.Reverse Stack</h4>
               <p>
               In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
               </p>
-              <a href=".">show is link</a>
-              <h5>1.Forword Stack</h5>
-              <p>
+              <a href=".">Learn More ></a>
+              <h4>1.Forword Stack</h4>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Stack represtation smiliar to pile of plates</figcaption>
+              </figure>
+             <p>
               In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
               </p>
             </div>
@@ -152,11 +155,34 @@
           </div>
        
 
-          <div id="Queue" class="pg">
-           <h1>Queue</h1>
-            <p>
-            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
-            </p>
+          <div id="Queue" class="content">
+            
+            <div class="container">
+              <h1>Queue</h1>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+
+              <p>
+              <strong> In this tutorial</strong>, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <h3><strong>Type of stack data structure</strong></h3>
+              
+              <h4>1.Reverse Stack</h4>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <a href=".">Learn More ></a>
+              <h4>1.Forword Stack</h4>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Stack represtation smiliar to pile of plates</figcaption>
+              </figure>
+             <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+            </div>
             <hr>
           </div>
 
