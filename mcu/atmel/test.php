@@ -34,6 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/headerScript.js"></script>
     <script src="https://bhura112.github.io/embeddedweb/global/footerScript.js"></script>
+    <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
     
         <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
     <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">

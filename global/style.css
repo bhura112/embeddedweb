@@ -123,6 +123,7 @@ background-color: #F2F3E8;
 
 .content-container {
   width: 70%;
+  background-image: linear-gradient(to bottom,aliceblue,#e1e8f1);
 }
 .content{
 padding: 20px 30px;
@@ -130,7 +131,6 @@ line-height: 26px;
 word-spacing: 4px;   
 font-kerning: normal;
 min-height: 1000px;
-background-image: linear-gradient(to bottom,aliceblue,#e1e8f1);
 scroll-margin-top: 5rem;
 }
 .content .container{
@@ -193,7 +193,54 @@ margin-bottom: 30px;
   background-color: antiquewhite;
   color: rgb(70, 60, 78);
 }
-@media only screen and (max-width: 1080px) {
+
+
+.card {
+    display:flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: rgb(237, 242, 246);
+    color:#25265e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    font-size: 16px;
+    transition: all 0.4s ease-in;
+    
+   padding: 10px;
+  }
+ 
+  .card:hover {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   transition: all .4s ease-out;
+   transform: scale(1.1);
+  }
+  .card .head {
+    min-height: 10px;
+    flex-grow: .1;
+  }
+ 
+  .card .body {
+   flex: 1 1 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   flex-grow:1;
+   text-align: center;
+   
+ }
+ .card .foot{
+   display: flex;
+   flex-direction: row;
+   align-self: center;
+   color: black;
+   flex-grow: .1;
+ }
+
+ @media only screen and (max-width: 1080px) {
   .body-top-contents{
       width: 100%;
   }
@@ -276,48 +323,3 @@ margin-bottom: 30px;
       display:block;
   }
 }
-
-.card {
-    display:flex;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    flex-direction: column;
-    justify-content: stretch;
-    background-color: rgb(237, 242, 246);
-    color:#25265e;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10%;
-    font-size: 16px;
-    transition: all 0.4s ease-in;
-    
-   padding: 10px;
-  }
- 
-  .card:hover {
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   transition: all .4s ease-out;
-   transform: scale(1.1);
-  }
-  .card .head {
-    min-height: 10px;
-    flex-grow: .1;
-  }
- 
-  .card .body {
-   flex: 1 1 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   flex-grow:1;
-   text-align: center;
-   
- }
- .card .foot{
-   display: flex;
-   flex-direction: row;
-   align-self: center;
-   color: black;
-   flex-grow: .1;
- }
