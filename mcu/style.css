@@ -1,11 +1,10 @@
-@font-face {
-  font-family: eca-fonts;
-  src: url(../global/eca-fonts-a.ttf);
- }
-
+p{
+  font-size: larger;
+  line-height: 36px;
+}
 .top-spacing {
   display: block;
-  width: 100%;
+  width: 100% ;
   height: 100px;
 }
 
@@ -19,17 +18,24 @@
 }
 
 .card {
-  width: 10rem;
-  height: 11rem;
+  width: 10rem !important;
+  height: 11rem !important;
   justify-content: space-evenly;
 }
 
 .card-background-1 {
-background-image: url(../../global/card-overloay-a.png);
+background-image: url(../global/card-overloay-a.png);
 }
 .card-background-2 {
-background-image: url(../../global/card-overloay-b.png);
+background-image: url(../global/card-overloay-b.png);
 }
 .card-background-3 {
-background-image: url(../../global/card-overloay-c.png);
+background-image: url(../global/card-overloay-c.png);
+}
+.container > h1{
+  font-size:2rem;
+  line-height: 40px;
+}
+.img-center {
+  width: 10%;
 }
