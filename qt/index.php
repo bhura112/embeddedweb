@@ -43,65 +43,147 @@
 </head>
 
   <body>
-    <a class="anchor" id="top"></a>
-    <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
-
-    <div class="main-container">
-      <main class="main">
-        <section class="top-section">
-          <div class="content">
-            <picture>
-              <img src="../img/qt-card.svg">
-            </picture>
-            <div class="content-col">
-              <h2><?php  echo $mainData['topic']; ?></h2>
-              <h4>
+  <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
+  <div class="top-spacing"></div> 
+  <div class="body-top-contents">
+        <div class="row-1"></div>
+        <div class="row-2">
+            <div class="col-1">
+            <span class="material-icons-outlined">integration_instructions</span>
+            </div>
+            <div class="col-2">
+                <h1><?php  echo $mainData['topic']; ?></h1>
+                <p>
                 Qt is a cross-platform application development framework for desktop, embedded and mobile. 
                 Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, 
-                Sailfish OS and others.
-               </h4>
-
-               <h4>
-                 Qt is not a programming language on its own. It is a framework written in C++. 
+                Sailfish OS and others. <br> <br>
+               </p>
+               <p>
+               Qt is not a programming language on its own. It is a framework written in C++. 
                  A preprocessor, the MOC (Meta-Object Compiler), is used to extend the C++ language with features like signals and slots. 
-               </h4>
+                </p>   
             </div>
-
-
+        </div>
+        <div class="row-3"></div>
+    </div>
            
+    <div class="body-cards-div">
+          <a class="card card-background-1" href="desktop/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
-        </section> 
-        
-        <section class="top-section-subsec">
-          <div class="card-sec">
-               <a href="desktop/"> 
-                  <div class="cardlogo">
-                    <h4>Desktop Developtment</h4>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
-
-                <a href="embedded/"> 
-                  <div class="cardlogo">
-                  <h4>Embedded Development</h4>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
-
-               <a href="mobile/"> 
-                  <div class="cardlogo">
-                  <h4>Android Development</h4>
-                    <div class="container">
-                      <h5> Learn <i class="fa fa-arrow-right "></i></h5>
-                    </div> 
-                  </div> 
-                </a>
+                <div class="body">
+                  <h2 class="txt-center">Desktop</h2>
                 </div>
-        </section>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+
+              <a class="card card-background-2" href="embedded/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h2 class="txt-center">Embedded</h2>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+
+              <a class="card card-background-2" href="android/">
+                <div class="head">
+                  <img src="../../global/icon-mcu.png" alt="" srcset="">
+                </div>
+                <div class="body">
+                  <h2 class="txt-center">Android</h2>
+                </div>
+                <div class="foot">
+                  <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
+                </div>
+              </a>
+     </div>
+
+
+     <div class="page-content">
+       <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+         <i class="material-icons-outlined menu-open-icon">menu_open</i>
+       </div>
+
+       <div id= "table-container" class="table-content-container">
+        <div class="table">
+            <div class="table-header">
+                 
+            </div>
+            <div id="MO-table" class="table-body">
+                
+                     <h3 > <a href="#Introduction">Introduction </a></h3>
+                     <h3 > <a href="#TTI">Tools To Install </a></h3>
+                     <h3 > <a href="#EIA">Examples In Action </a> </h3>
+            </div>
+            <div class="table-body">
+               
+            </div>
+        </div>
+       </div>
+
+       <div class="content-container">
+
+         <div id="Introduction" class="content">
+            
+            <div class="container">
+              <h1>Introduction</h1>
+              <p>Qt is an application development framework based on C++. Traditionally, C++ is the major programming language used to develop with Qt.</p>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Qt Framework</figcaption>
+              </figure>
+              <p>Since the introduction of Qt Quick (Qt UI Creation Kit) in the beginning of 2011, Qt has been supporting script-based declarative programming with QML. QML is very easy to understand for anybody who is familiar with JavaScript as well as for all other developers who are familiar the basics of object oriented programming and have worked with other scripting languages. Designers who are familiar with web development can start with QML and implement their ideas in executable code which can later be powered by more application logic developed by engineering teams.</p>
+              <p>A solid understanding of the basics of C++ is essential for those planning on using Qt for C++. You do not need to be a C++ expert to begin. Qt simplifies many aspects of C++ development, making it a lot of fun. The overall development effort is minimal since Qt API are easy to understand and application functionality can be implemented with a smaller amount of code. C++ experts will find a lot of powerful APIs and tools in Qt which will make complicated things simple and new features easy to get done.</p>
+
+            </div>
+            <hr>
+          </div>
+       
+
+          <div id="TTI" class="content">
+            
+            <div class="container">
+              <h1>Tools to install</h1>
+              <p>Qt is a full development framework with tools designed to streamline the creation of applications and user interfaces for desktop, embedded, and mobile platforms.</p>
+              <p>Qt provides a range of tools for all steps in application development for desktops and devices. Tools are integrated into packages that are easily installed on several platforms. You have following options:</p>
+              <h3>Qt SDK</h3> 
+              <p>- one package with all the tools you need for the creation of applications for Symbian and Maemo in addition to desktop platforms such as Microsoft Windows, Mac OS X, and Linux.</p>
+              <h3>Qt Creator</h3> 
+              <p>- a cross-platform integrated development environment (IDE). Note, that the Qt Creator package does not contain the Qt framework itself. You can either configure it to use with a version of Qt already installed on your machine or download a new version of Qt separately.</p>
+              <h3>Qt binary package</h3> 
+              <p>- a ready-to-go installer for Mac, Linux and Windows containing a precompiled tool chain, libraries, include files, documentation, demos and examples.</p>
+              <h3>Qt source code packages</h3> 
+              <p>- Qt and Qt creator are available in source code as zip or tar archives as well as on the Public Qt Repository.</p>
+              <p>All packages above are available for download on the Downloads page. We recommend starting with Qt SDK since it contains all you need in one package. Later on you can consider installing other packages separately. They can all coexist on your machine and be configured to work with each other.</p>
+                    
+            </div>
+            <hr>
+          </div>
+          
+          <div id="EIA" class="content">
+                    <div class="container">
+                      <h1>Examples in action</h1>
+                      <p>One of the most popular ways of discovering new technologies is to walk through examples.</p>
+                      <p>Qt provides a large selection of examples and demos which are available in source code (check demos and examples directories in your installation).The main difference between examples and demos is that examples are smaller and more focused on one functionality whereas demos are complete, more complex applications using many Qt features.</p>
+                      <p>Most of the examples and demos are precompiled and integrated into the Examples and Demos Launcher.</p>
+                      <p>Run it and see Qt's features in action. You can also start all examples and demos from it as separate applications or browse to the source code. Qt Creator allows loading of examples as projects with a wizard on the "Welcome" page.</p>
+                       <p>Additionally, Qt Widget Gallery provides overviews of selected Qt desktop widgets in each of the styles used on various supported platforms.</p>
+                    </div>
+                    <hr>
+              </div>
+       </div>
+      
+   </div>
+
+
        <section class="page-container">
           <div class="topics">
             <div class="table-of-content">
@@ -111,40 +193,16 @@
             </div>
             <div class="table-topic">
               <div class="description">            
-                <h5>Qt is an application development framework based on C++. Traditionally, C++ is the major programming language used to develop with Qt.</h5>
-                <h5>Since the introduction of Qt Quick (Qt UI Creation Kit) in the beginning of 2011, Qt has been supporting script-based declarative programming with QML. QML is very easy to understand for anybody who is familiar with JavaScript as well as for all other developers who are familiar the basics of object oriented programming and have worked with other scripting languages. Designers who are familiar with web development can start with QML and implement their ideas in executable code which can later be powered by more application logic developed by engineering teams.</h5>
-                <h5>A solid understanding of the basics of C++ is essential for those planning on using Qt for C++. You do not need to be a C++ expert to begin. Qt simplifies many aspects of C++ development, making it a lot of fun. The overall development effort is minimal since Qt API are easy to understand and application functionality can be implemented with a smaller amount of code. C++ experts will find a lot of powerful APIs and tools in Qt which will make complicated things simple and new features easy to get done.</h5>
-              </div>
+                </div>
              
               <!------------------------------------------------------------------------------------------------ -->
               <div id="tti" class="table-topic-container jumptarget">
                     <div class="container-body">
-                      <h2>Tools to install</h2>
-                      <h4>Qt is a full development framework with tools designed to streamline the creation of applications and user interfaces for desktop, embedded, and mobile platforms.</h4>
-                      <h4>Qt provides a range of tools for all steps in application development for desktops and devices. Tools are integrated into packages that are easily installed on several platforms. You have following options:</h4>
-                      <h5 class="fa fa-2x">Qt SDK</h5> 
-                      <h4>- one package with all the tools you need for the creation of applications for Symbian and Maemo in addition to desktop platforms such as Microsoft Windows, Mac OS X, and Linux.</h4>
-                      <h5 class="fa fa-2x">Qt Creator</h5> 
-                      <h4>- a cross-platform integrated development environment (IDE). Note, that the Qt Creator package does not contain the Qt framework itself. You can either configure it to use with a version of Qt already installed on your machine or download a new version of Qt separately.</h4>
-                      <h5 class="fa fa-2x">Qt binary package</h5> 
-                      <h4>- a ready-to-go installer for Mac, Linux and Windows containing a precompiled tool chain, libraries, include files, documentation, demos and examples.</h4>
-                      <h5 class="fa fa-2x">Qt source code packages</h5> 
-                      <h4>- Qt and Qt creator are available in source code as zip or tar archives as well as on the Public Qt Repository.</h4>
-                      <h4>All packages above are available for download on the Downloads page. We recommend starting with Qt SDK since it contains all you need in one package. Later on you can consider installing other packages separately. They can all coexist on your machine and be configured to work with each other.</h4>
-                    
+                     
                     </div>
               </div>
 
-              <div id="eia" class="table-topic-container jumptarget">
-                    <div class="container-body">
-                      <h2>Examples in action</h2>
-                      <h4>One of the most popular ways of discovering new technologies is to walk through examples.</h4>
-                      <h4>Qt provides a large selection of examples and demos which are available in source code (check demos and examples directories in your installation).The main difference between examples and demos is that examples are smaller and more focused on one functionality whereas demos are complete, more complex applications using many Qt features.</h4>
-                      <h4>Most of the examples and demos are precompiled and integrated into the Examples and Demos Launcher.</h4>
-                      <h4>Run it and see Qt's features in action. You can also start all examples and demos from it as separate applications or browse to the source code. Qt Creator allows loading of examples as projects with a wizard on the "Welcome" page.</h4>
-                       <h4>Additionally, Qt Widget Gallery provides overviews of selected Qt desktop widgets in each of the styles used on various supported platforms.</h4>
-                    </div>
-              </div>
+              
             </div> 
           </div>  
         </section>

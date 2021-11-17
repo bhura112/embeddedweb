@@ -42,39 +42,38 @@
 </head>
 
   <body>
-    <a class="anchor" id="top"></a>
-   <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT']."/global/header.php"; ?>
 
-  <div class="main-container">
-      <main class="main">
-        <section class="top-section">
-          <div class="content">
-            <picture>
-              <img src="../../img/flip-card-front.svg">
-            </picture>
-            <div class="content-col">
-              <h2 class="center-me">ATMEL</h2>
-         
-              <h4> 
-              AVR is a family of microcontrollers developed since 1996 by Atmel, acquired by Microchip Technology in 2016. These are modified Harvard architecture 8-bit RISC single-chip microcontrollers. AVR was one of the first microcontroller families to use on-chip flash memory for program storage, as opposed to one-time programmable ROM, EPROM, or EEPROM used by other microcontrollers at the time.
+  <div class="top-spacing"></div> 
 
-           </h4>
-
-              <h4>
-              AVR microcontrollers find many applications as embedded systems. They are especially common in hobbyist and educational embedded applications, popularized by their inclusion in many of the Arduino line of open hardware development boards.
-   </h4>
+  <div class="body-top-contents">
+        <div class="row-1"></div>
+        <div class="row-2">
+            <div class="col-1">
+            <span class="material-icons-outlined">memory</span>
             </div>
-          </div>
-        </section> 
-        
-        <section class="top-section-subsec">
-          <div class="card-sec">
-              <a class="card card-background-1" href="mega/">
+            <div class="col-2">
+                <h1><?php  echo $mainData['topic']; ?></h1>
+                <p> 
+                    AVR is a family of microcontrollers developed since 1996 by Atmel, acquired by Microchip Technology in 2016. These are modified Harvard architecture 8-bit RISC single-chip microcontrollers. AVR was one of the first microcontroller families to use on-chip flash memory for program storage, as opposed to one-time programmable ROM, EPROM, or EEPROM used by other microcontrollers at the time.
+                    <br><br>
+                </p>
+
+               <p>
+                AVR microcontrollers find many applications as embedded systems. They are especially common in hobbyist and educational embedded applications, popularized by their inclusion in many of the Arduino line of open hardware development boards.
+                </p> 
+              </div>
+        </div>
+        <div class="row-3"></div>
+    </div>
+           
+    <div class="body-cards-div">
+          <a class="card card-background-1" href="atmega/">
                 <div class="head">
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">ATmega</h4>
+                  <h2 class="txt-center">ATmega</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
@@ -86,7 +85,7 @@
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">Xmega</h4>
+                  <h2 class="txt-center">Xmega</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
@@ -98,28 +97,140 @@
                   <img src="../../global/icon-mcu.png" alt="" srcset="">
                 </div>
                 <div class="body">
-                  <h4 class="txt-center">Arduino</h4>
+                  <h2 class="txt-center">Arduino</h2>
                 </div>
                 <div class="foot">
                   <h4>Learn  <i class="fa fa-1x fa-arrow-right"></i></h4>
                 </div>
               </a>
-          
-                </div>
-        </section>
+     </div>
 
+     <div class="page-content">
+       <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+         <i class="material-icons-outlined menu-open-icon">menu_open</i>
+       </div>
+
+       <div id= "table-container" class="table-content-container">
+        <div class="table">
+            <div class="table-header">
+                 
+            </div>
+            <div id="MO-table" class="table-body">
+                
+                     <h3 > <a href="#Introduction">Introduction </a></h3>
+                     <h3 > <a href="#Architectures">Architectures </a></h3>
+                     <h3 > <a href="#Types">Types </a> </h3>
+                     <h3 > <a href="#Memory">Memory</a> </h3>
+                     <h3 > <a href="#IO">Input/Output </a> </h3>
+                     <h3 > <a href="#Timer">Timer/Counter </a> </h3>
+                     <h3 > <a href="#Uart">Usart/Uart </a> </h3>
+                     <h3 > <a href="#SPI">SPI </a> </h3>
+            </div>
+            <div class="table-body">
+               
+            </div>
+        </div>
+       </div>
+
+       <div class="content-container">
+
+         <div id="Introduction" class="content">
+            
+            <div class="container">
+              <h1>Introduction</h1>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+
+              <p>
+              <strong> In this tutorial</strong>, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <h3><strong>Type of stack data structure</strong></h3>
+              
+              <h4>1.Reverse Stack</h4>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <a href=".">Learn More ></a>
+              <h4>1.Forword Stack</h4>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Stack represtation smiliar to pile of plates</figcaption>
+              </figure>
+             <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+            </div>
+            <hr>
+          </div>
+       
+
+          <div id="Queue" class="content">
+            
+            <div class="container">
+              <h1>Queue</h1>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+
+              <p>
+              <strong> In this tutorial</strong>, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <h3><strong>Type of stack data structure</strong></h3>
+              
+              <h4>1.Reverse Stack</h4>
+              <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+              <a href=".">Learn More ></a>
+              <h4>1.Forword Stack</h4>
+              <figure class="fig-sim">
+               
+                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <figcaption> Stack represtation smiliar to pile of plates</figcaption>
+              </figure>
+             <p>
+              In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+              </p>
+            </div>
+            <hr>
+          </div>
+
+          <div id="Linklist" class="pg">
+           <h1>Linklist</h1>
+            <p>
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr>
+          </div>
+
+
+          <div id="Tree" class="pg">
+           <h1>Tree</h1>
+            <p>
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr>
+          </div>
+
+          <div id="Graph" class="pg">
+           <h1>Graph</h1>
+            <p>
+            In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about different literals in C programming and how to create constants.
+            </p>
+            <hr>
+          </div>
+          
+        
+       </div>
+      
+   </div>
         <section class="page-container">
           <div class="topics">
             <div class="table-of-content">
               <h3>Table Index</h3>
-              <a href="#architecture">Architectures</a>
-              <a href="#types">Types</a>
-              <a href="#mem">Memory </a>
-              <a href="#io">Input/Output </a>
-              <a href="#timer">Timer/Counter</a>
-              <a href="#uart" >Uart</a>
-              <a href="#spi">SPI</a>
-              <a href="#i2c">I2C </a>
+              
             </div>
             <div class="table-topic">
               <div class="description">   
