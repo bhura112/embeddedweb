@@ -19,7 +19,7 @@ GetfootData(11);
   <script src="https://bhura112.github.io/embeddedweb/global/script.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/style.css">
+  <link rel="stylesheet" href="../../global/style.css">
   <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/header.css">
   <link rel="stylesheet" href="https://bhura112.github.io/embeddedweb/global/foot.css">
 
@@ -39,7 +39,7 @@ GetfootData(11);
 
     gtag('config', 'G-TFF1PLC6Q9');
   </script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <title><?php echo $rowobj->page_title; ?></title>
 </head>
@@ -124,59 +124,59 @@ GetfootData(11);
   <div class="page-content">
 
     <div class="page-content-col1">
-    <div class="page-content-col1-top">
-    <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
-      <i class="material-icons-outlined menu-open-icon">menu_open</i>
-    </div>
-
-    <div id="table-container" class="table-content-container">
-      <div class="table">
-        <div class="table-header">
-
+      <div class="page-content-col1-top">
+        <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+          <i class="material-icons-outlined menu-open-icon">menu_open</i>
         </div>
-        <div id="MO-table" class="table-body">
 
-          <h3> <a href="#Introduction">Introduction </a></h3>
-          <h3> <a href="#Types">Types </a></h3>
-          <h3> <a href="#GettingStarted">Getting Started </a> </h3>
-          <h3> <a href="#EditorIde">Editor/Ide</a> </h3>
-          <h3> <a href="#Compiler">Compiler</a> </h3>
-          <h3> <a href="#LibsTools">Libs & Tools</a> </h3>
-          <h3> <a href="#BD">Books & Documents</a> </h3>
+        <div id="table-container" class="table-content-container">
+          <div class="table">
+            <div class="table-header">
+
+            </div>
+            <div id="MO-table" class="table-body">
+
+              <h3> <a href="#Introduction">Introduction </a></h3>
+              <h3> <a href="#Types">Types </a></h3>
+              <h3> <a href="#GettingStarted">Getting Started </a> </h3>
+              <h3> <a href="#EditorIde">Editor/Ide</a> </h3>
+              <h3> <a href="#Compiler">Compiler</a> </h3>
+              <h3> <a href="#LibsTools">Libs & Tools</a> </h3>
+              <h3> <a href="#BD">Books & Documents</a> </h3>
+            </div>
+            <div class="table-body">
+
+            </div>
+          </div>
         </div>
-        <div class="table-body">
 
+      </div>
+
+      <div id="sticky-container" class="page-content-col1-bottom">
+        <div id="sticky-c" class="sticky-c">
+          <div class="page-video">
+            <iframe src="https://www.youtube.com/embed/yRnrEpG680o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="table-container" class="table-content-container">
+            <div class="table">
+              <div class="table-header">
+                <h3>Getting Started...with</h3>
+              </div>
+              <div class="table-body">
+
+                <h3> <a href="#Introduction">MICROCHIP </a></h3>
+                <h3> <a href="#Types">ARM </a></h3>
+                <h3> <a href="#GettingStarted">RTOS </a> </h3>
+                <h3> <a href="#EditorIde">QT</a> </h3>
+                <h3> <a href="#Compiler">Linux</a> </h3>
+              </div>
+              <div class="table-body">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    </div>
-    
-    <div class="page-content-col1-bottom">
-    <div class="page-video">
-      ggfd
-    </div>
-    <div id="table-container" class="table-content-container">
-      <div class="table">
-        <div class="table-header">
-
-        </div>
-        <div class="table-body">
-
-          <h3> <a href="#Introduction">Introduction </a></h3>
-          <h3> <a href="#Types">Types </a></h3>
-          <h3> <a href="#GettingStarted">Getting Started </a> </h3>
-          <h3> <a href="#EditorIde">Editor/Ide</a> </h3>
-          <h3> <a href="#Compiler">Compiler</a> </h3>
-          <h3> <a href="#LibsTools">Libs & Tools</a> </h3>
-          <h3> <a href="#BD">Books & Documents</a> </h3>
-        </div>
-        <div class="table-body">
-
-        </div>
-      </div>
-    </div>
-    </div>
     </div>
 
     <div class="content-container">
@@ -206,17 +206,17 @@ GetfootData(11);
           <h1>Types</h1>
           <p>AVR microcontrollers are available in three categories:</p>
           <h3>TinyAVR </h3>
-          <img src="img/tiny.jfif" alt="" srcset="">
+          <img class="ins-img" src="img/tiny.jfif" alt="" srcset="">
           <p>Less memory, small size, suitable only for simpler applications</p>
           <h3>MegaAVR</h3>
-          <img src="img/xmega.png" alt="" srcset="">
+          <img class="ins-img" src="img/xmega.png" alt="" srcset="">
           <p>These are the most popular ones having good amount of memory (upto 256 KB), higher number of inbuilt peripherals and suitable for moderate to complex applications.</p>
           <h3>XmegaAVR</h3>
-          <img src="img/xmega.png" alt="" srcset="">
+          <img class="ins-img" src="img/xmega.png" alt="" srcset="">
           <p>Used commercially for complex applications, which require large program memory and high speed.</p>
 
           <h3>Arduino</h3>
-          <img src="img/arduino.jpg" alt="" srcset="">
+          <img class="ins-img" src="img/arduino.jpg" alt="" srcset="">
           <p>Used commercially for complex applications, which require large program memory and high speed.</p>
         </div>
         <hr>
