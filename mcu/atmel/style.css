@@ -23,6 +23,13 @@
   height: 11rem;
   justify-content: space-evenly;
 }
+.container .ins-img {
+  display: block;
+  justify-self: center;
+  width: 60%;
+}
+
+
 .card-background-1 {
 background-image: url(../../global/card-overloay-a.png);
 }

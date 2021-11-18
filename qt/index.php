@@ -137,7 +137,7 @@
               <p>Qt is an application development framework based on C++. Traditionally, C++ is the major programming language used to develop with Qt.</p>
               <figure class="fig-sim">
                
-                <img src="../mcu/img/harvard.png" alt="" srcset="">
+                <img src="img/qtframework.jpg" alt="" srcset="">
                 <figcaption> Qt Framework</figcaption>
               </figure>
               <p>Since the introduction of Qt Quick (Qt UI Creation Kit) in the beginning of 2011, Qt has been supporting script-based declarative programming with QML. QML is very easy to understand for anybody who is familiar with JavaScript as well as for all other developers who are familiar the basics of object oriented programming and have worked with other scripting languages. Designers who are familiar with web development can start with QML and implement their ideas in executable code which can later be powered by more application logic developed by engineering teams.</p>
