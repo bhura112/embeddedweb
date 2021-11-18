@@ -1,17 +1,34 @@
+let lastKnownScrollPosition = 0;
+let ticking = false;
 
-var getPageHeadTopicName = document.getElementById('page-topic-name');
-var getPageHeadTopicIcon = document.getElementById('page-topic-icon');
+var s_container = document.getElementById('sticky-container');
+var s_elemet    = document.getElementById('sticky-c');
 
-window.onscroll = function() {scrollFunction()};
+function doSomething(scrollPos) {
+  var ele_rec = s_container.getBoundingClientRect();
 
-function scrollFunction() 
-{
-  if (document.documentElement.scrollTop >= 1) 
-  {
-    getPageHeadTopicName.classList.add('dec-page-topic-name');
-    getPageHeadTopicIcon.classList.add('dec-page-topic-icon');
-  } else {
-    getPageHeadTopicName.classList.remove('dec-page-topic-name');
-    getPageHeadTopicIcon.classList.remove('dec-page-topic-icon');
+  if (ele_rec.top < 200){
+    console.log("sticky");
+    s_elemet.style.position = "fixed";
+    s_elemet.style.top = "100px";
+    s_elemet.style.margin = "0px -50px";
+  }else {
+    s_elemet.style.position = "relative";
+    s_elemet.style.top = "";
+    s_elemet.style.left="";
+    s_elemet.style.margin = "";
   }
 }
+
+document.addEventListener('scroll', function(e) {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});

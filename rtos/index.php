@@ -36,7 +36,7 @@
 
       gtag('config', 'G-TFF1PLC6Q9');
     </script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title><?php  echo $mainData['title']; ?></title>
 </head>
@@ -94,17 +94,21 @@
 
 
      <div class="page-content">
-       <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
-         <i class="material-icons-outlined menu-open-icon">menu_open</i>
-       </div>
+       
+       <div class="page-content-col1">
+      <div class="page-content-col1-top">
+        <div class="table-icon" id="MO-icon" onclick="onMOClicked()">
+          <i class="material-icons-outlined menu-open-icon">menu_open</i>
+        </div>
 
-       <div id= "table-container" class="table-content-container">
-        <div class="table">
+        <div id="table-container" class="table-content-container">
+          <div class="table">
             <div class="table-header">
-                 
+
             </div>
             <div id="MO-table" class="table-body">
-                     <h3 > <a href="#Introduction">Introduction </a></h3>
+
+                    <h3 > <a href="#Introduction">Introduction </a></h3>
                      <h3 > <a href="#Architectures">Architectures </a></h3>
                      <h3 > <a href="#Multitasking">Multitasking </a></h3>
                      <h3 > <a href="#Scheduling">Scheduling </a> </h3>
@@ -112,13 +116,42 @@
                      <h3 > <a href="#RTA">Real Time Applications </a> </h3>
                      <h3 > <a href="#RTS">Real Time Scheduling </a> </h3>
                      <h3 > <a href="#AD">Advantage/ Disadvantage </a> </h3>
+           
             </div>
             <div class="table-body">
-               
-            </div>
-        </div>
-       </div>
 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="sticky-container" class="page-content-col1-bottom">
+        <div id="sticky-c" class="sticky-c">
+          <div class="page-video">
+            <iframe src="https://www.youtube.com/embed/yRnrEpG680o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="table-container" class="table-content-container">
+            <div class="table">
+              <div class="table-header">
+                <h3>Getting Started...with</h3>
+              </div>
+              <div class="table-body">
+
+                <h3> <a href="#Introduction">MICROCHIP </a></h3>
+                <h3> <a href="#Types">ARM </a></h3>
+                <h3> <a href="#GettingStarted">RTOS </a> </h3>
+                <h3> <a href="#EditorIde">QT</a> </h3>
+                <h3> <a href="#Compiler">Linux</a> </h3>
+              </div>
+              <div class="table-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <div class="content-container">
   <div id="Introduction" class="content">   

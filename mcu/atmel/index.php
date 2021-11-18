@@ -299,7 +299,7 @@ GetfootData(11);
       </div>
 
 
-      <div id="Compiler" class="content">
+      <!--<div id="Compiler" class="content">
         <div class="container">
 
 
@@ -321,7 +321,7 @@ GetfootData(11);
 
         </div>
         <hr>
-      </div>
+      </div>-->
 
     </div>
   </div>
