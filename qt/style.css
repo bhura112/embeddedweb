@@ -32,3 +32,10 @@ background-image: url(../../global/card-overloay-b.png);
 .card-background-3 {
 background-image: url(../../global/card-overloay-c.png);
 }
+.container > h1{
+  font-size:2rem;
+  line-height: 40px;
+}
+.img-center {
+  width: 10%;
+}

@@ -16,8 +16,8 @@ function doSomething(scrollPos) {
     s_elemet.style.margin = "";
   }else  if (ele_rec.top < 200){
     s_elemet.style.position = "fixed";
-    s_elemet.style.top = "100px";
-    s_elemet.style.margin = "0px -50px";
+    s_elemet.style.top = "50px";
+    s_elemet.style.margin = "0px -100px";
   }
   else {
     s_elemet.style.position = "relative";

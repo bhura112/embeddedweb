@@ -26,8 +26,8 @@
     position: fixed;
     width: 100%;
     z-index:9999;
-    box-shadow: 0 10px 10px -5px rgb(124, 118, 146)
-
+    transition: all .2s ease-in;
+    box-shadow: 0 4px 12px rgb(37 38 94 / 6%);
     font-family: var(--header-font-family);
 }
 .header .navbar {

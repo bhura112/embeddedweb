@@ -160,7 +160,7 @@ GetfootData(11);
           <div id="table-container" class="table-content-container">
             <div class="table">
               <div class="table-header">
-                <h3>Getting Started...with</h3>
+                <h3>Related Topics</h3>
               </div>
               <div class="table-body">
 
