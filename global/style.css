@@ -20,7 +20,7 @@ html{
 
 body{
   scroll-padding-top: var(--top-spacing);
-  background-color: aliceblue;
+  background-color: #FAF9FC;
   color: rgb(13, 35, 58);
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
